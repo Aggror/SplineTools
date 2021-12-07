@@ -1,0 +1,11 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplineTools.Windows", "SplineTools.Windows\SplineTools.Windows.csproj", "{6882AD6D-3B9F-4CB9-BED3-6F711A319590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplineTools", "SplineTools\SplineTools.csproj", "{221740D6-3709-4128-8683-F9FBE1B9C744}"
+EndProject
+Global
+EndGlobal
