@@ -13,23 +13,37 @@ Hierarchy:
         - ref!! f1629069-296a-4057-b016-687bdf1d4e4a
     Parts:
         -   Entity:
+                Id: 14463722-ba67-4cc2-9bc0-f9c7f75a622b
+                Name: Node3
+                Components:
+                    12849867b907b4f072ad6b0a722e7113: !TransformComponent
+                        Id: cc01371b-f3ef-4969-b9f8-16b40dea5f9e
+                        Position: {X: 0.86837775, Y: 0.39144304, Z: -4.6409354}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 8c227d15-36cc-4a26-bac7-f235bd75da5a
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 2.0, Y: 0.0, Z: 2.0}
+                            TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
                 Id: 24986d58-d38b-4cdf-947c-e7268928153f
                 Name: Node2
                 Components:
                     12849867b907b4f072ad6b0a722e7113: !TransformComponent
                         Id: 2ec71aee-0f47-4910-b297-f9b3bec233e0
-                        Position: {X: -3.6052508, Y: 0.0, Z: -3.5235262}
+                        Position: {X: -3.8526297, Y: 0.39144304, Z: -3.9680483}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: 5d83469a-c562-4db4-bd51-1f8ede6e42ab
-                        BoundingBox:
-                            Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
-                            Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Segments: 50
-                        TangentOut: {X: 1.0, Y: 0.0, Z: -4.0}
-                        TangentIn: {X: -3.0, Y: 0.0, Z: 0.0}
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 2.0, Y: 0.0, Z: -5.0}
+                            TangentInLocal: {X: -1.0, Y: 0.0, Z: 2.0}
         -   Entity:
                 Id: 264ee3f0-c80a-4f31-bfba-19383bb77369
                 Name: Ground
@@ -70,41 +84,21 @@ Hierarchy:
                                 BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
-                Id: 75c07efe-5a28-4c16-934f-8c9de767a352
-                Name: Node3
-                Components:
-                    12849867b907b4f072ad6b0a722e7113: !TransformComponent
-                        Id: 6178f314-8f11-496b-8ddc-0da2c46ed368
-                        Position: {X: 3.026218, Y: 0.65693355, Z: -3.1211948}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
-                        Id: 7f122d1c-452c-4cca-832b-470e469ccf5b
-                        BoundingBox:
-                            Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
-                            Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Segments: 50
-                        TangentOut: {X: 3.0, Y: 0.0, Z: 0.0}
-                        TangentIn: {X: -3.0, Y: 0.0, Z: 2.0}
-        -   Entity:
                 Id: a8bb7e28-7373-4959-85af-d7aa603ce943
                 Name: Node1
                 Components:
                     12849867b907b4f072ad6b0a722e7113: !TransformComponent
                         Id: cda4ecb8-a0ed-4c04-aecc-fcb4812b41d2
-                        Position: {X: -1.4973606, Y: 0.0, Z: 0.06007256}
+                        Position: {X: -1.0184249, Y: 1.264148, Z: -0.36262625}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: b7076627-555f-4b24-b6f0-1688f4134f6b
-                        BoundingBox:
-                            Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
-                            Maximum: {X: 3.555555, Y: 0.0, Z: 0.0}
-                        Segments: 50
-                        TangentOut: {X: -2.0, Y: 0.0, Z: -2.0}
-                        TangentIn: {X: 2.0, Y: 0.0, Z: 3.0}
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 2.0, Y: 0.0, Z: -4.0}
+                            TangentInLocal: {X: 2.0, Y: 0.0, Z: 2.0}
         -   Entity:
                 Id: d86046f3-4f32-43c0-86c4-c5335be9a764
                 Name: Skybox
@@ -152,22 +146,23 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: 6d1438b3-eee4-4d17-a3dd-0d3946e16dce
-                        Position: {X: 1.7135885, Y: 1.3182559, Z: 0.0}
+                        Position: {X: 3.2084525, Y: 1.3182559, Z: -2.407915}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             5e706c595a8ed79e8127ca2dbe4ff841: ref!! cda4ecb8-a0ed-4c04-aecc-fcb4812b41d2
                             4c6bcbb9739788ace98ad12051002038: ref!! 2ec71aee-0f47-4910-b297-f9b3bec233e0
-                            5af991a70546ddaf56ea0c2a593a45d5: ref!! 6178f314-8f11-496b-8ddc-0da2c46ed368
+                            4d9bd6f25c2d1dab566754058fe466a2: ref!! cc01371b-f3ef-4969-b9f8-16b40dea5f9e
                     1dba32f5c3b436441756d1d76f73a4d6: !SplineComponent
                         Id: f16d7b45-7f2a-420f-8cc5-8276cbd95b3b
-                        DebugInfo:
-                            Points: false
-                            Segments: true
-                            Nodes: true
-                            BoundingBox: false
-                        Nodes:
-                            617b76a3be9350e4b0a7b34855deb941: ref!! b7076627-555f-4b24-b6f0-1688f4134f6b
-                            7bf2d1e2def4fda7a2ade0f877c096fd: ref!! 5d83469a-c562-4db4-bd51-1f8ede6e42ab
-                            5a407201b32de70fe0ac4c8f150b545a: ref!! 7f122d1c-452c-4cca-832b-470e469ccf5b
-                        Loop: true
+                        Spline:
+                            Loop: true
+                            DebugInfo:
+                                Points: false
+                                Segments: true
+                                Nodes: false
+                                BoundingBox: false
+                        SplineNodesComponents:
+                            77a70310a5ccd0787baa52f3b46bea5c: ref!! b7076627-555f-4b24-b6f0-1688f4134f6b
+                            8953c913ddea43217dfa970a79560270: ref!! 5d83469a-c562-4db4-bd51-1f8ede6e42ab
+                            5264f495947b46e1b7f8e950e28776a9: ref!! 8c227d15-36cc-4a26-bac7-f235bd75da5a
