@@ -2,7 +2,7 @@
 Id: a3a82721-036b-486a-8bbc-4d45384fc01a
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
-DefaultScene: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
+DefaultScene: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
 GraphicsCompositor: b81dbd04-b271-4ba5-8efd-07fcb0121d2d:GraphicsCompositor
 Defaults:
     - !Stride.Audio.AudioEngineSettings,Stride.Audio

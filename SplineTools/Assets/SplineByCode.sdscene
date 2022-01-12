@@ -28,6 +28,21 @@ Hierarchy:
                         Model: 136576a0-e08f-4b73-aef1-03df8e422709:Ground
                         Materials: {}
         -   Entity:
+                Id: 2c3ceae8-0c17-4585-be38-7c9870fe0a7f
+                Name: Orb
+                Components:
+                    04959afeca683178eba57175cb4f2520: !TransformComponent
+                        Id: b3b5a8a1-d989-4e7e-81c6-683ba99bc3a5
+                        Position: {X: -0.3422475, Y: 0.0, Z: 0.48125076}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.50829583, Y: 0.50829583, Z: 0.50829583}
+                        Children: {}
+                    7edb9219ea4ad2cbfa305e73cfcb596b: !ModelComponent
+                        Id: 2e1d8b3b-86b1-4681-8937-2f2626266ab1
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            602ed76b09302d6acff764ddeb6629ea~0: 47fe2582-86c3-42c8-ab65-978342467add:PointOfInterest
+        -   Entity:
                 Id: 7049b1b8-dd5e-4fcf-9975-705783177aae
                 Name: Directional light
                 Components:
@@ -58,10 +73,11 @@ Hierarchy:
                 Components:
                     04959afeca683178eba57175cb4f2520: !TransformComponent
                         Id: 6d51df09-8b4d-4c37-aeb9-b74f098e8192
-                        Position: {X: -0.3422475, Y: 0.0, Z: 0.49260044}
+                        Position: {X: -0.3422475, Y: 0.0, Z: 0.202005}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.50829583, Y: 0.50829583, Z: 0.50829583}
-                        Children: {}
+                        Children:
+                            53be631644b59b430059df953c5bd97f: ref!! b3b5a8a1-d989-4e7e-81c6-683ba99bc3a5
                     7edb9219ea4ad2cbfa305e73cfcb596b: !ModelComponent
                         Id: 1f34f22d-47fb-4c39-94a5-cb4768243664
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
@@ -98,13 +114,18 @@ Hierarchy:
                         Id: 15d3709c-1a20-4306-a7c5-90ef8cef1fa5
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
                         Materials: {}
+                    50d4db185ef69df2132c50933cd9d178: !SplineTools.SplineByCode,SplineTools
+                        Id: 94b4dbad-48df-4a24-8bfc-e16af498c97f
+                        splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
+                        boundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial
+                        Looping: false
         -   Entity:
                 Id: ed29e5d9-59be-4625-bf3d-f579275d85c4
                 Name: Camera
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 7740b059-7720-46ec-a2cf-8bf5d845c908
-                        Position: {X: 0.3208806, Y: 19.145027, Z: 0.9372362}
+                        Position: {X: 0.3208806, Y: 14.199288, Z: 0.9372362}
                         Rotation: {X: 4.2124555E-08, Y: 0.70710677, Z: 0.70710677, W: -4.2124555E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}

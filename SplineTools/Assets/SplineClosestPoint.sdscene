@@ -183,10 +183,7 @@ Hierarchy:
                     24e554ca1177df07bc9473147d12c446: !SplineComponent
                         Id: 608a47be-006e-4a4a-98d0-4a93d05cf8b4
                         Loop: true
-                        SplineNodesComponents:
-                            f8bb64b78f1dda411e70394bbbd35462: ref!! a26519e8-06f8-4ae3-a2c0-c4a88efa1627
-                            c0962791bbebfff5eba76c5d8c4f2056: ref!! bb54d273-9304-42e2-8626-1389faa0ec3e
-                            38cc06108a65b342bcefeced17df57b7: ref!! 8687eba1-a116-4cfe-85ad-cf7c3fea27f2
+                        Nodes: {}
                         SplineRenderer:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
                             BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial

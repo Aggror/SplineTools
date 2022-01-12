@@ -177,7 +177,7 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: 6d1438b3-eee4-4d17-a3dd-0d3946e16dce
-                        Position: {X: 5.5220447, Y: 5.206968, Z: 7.6117563}
+                        Position: {X: 5.627159, Y: 5.206968, Z: 7.6314588}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -187,10 +187,7 @@ Hierarchy:
                     24e554ca1177df07bc9473147d12c446: !SplineComponent
                         Id: bbfa513f-dc83-4d7c-bf2f-0ff8f245a86c
                         Loop: true
-                        SplineNodesComponents:
-                            f8bb64b78f1dda411e70394bbbd35462: ref!! b7076627-555f-4b24-b6f0-1688f4134f6b
-                            c0962791bbebfff5eba76c5d8c4f2056: ref!! 5d83469a-c562-4db4-bd51-1f8ede6e42ab
-                            38cc06108a65b342bcefeced17df57b7: ref!! 8c227d15-36cc-4a26-bac7-f235bd75da5a
+                        Nodes: {}
                         SplineRenderer:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
                             BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial
