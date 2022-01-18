@@ -153,8 +153,8 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 2cb8a5c6-7962-4ee5-8829-f8c3e6235dca
-                        Position: {X: 7.8851204, Y: 19.145027, Z: 12.055011}
-                        Rotation: {X: 4.2124555E-08, Y: 0.70710677, Z: 0.70710677, W: -4.2124555E-08}
+                        Position: {X: 6.519552, Y: 10.618824, Z: -4.101574}
+                        Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
@@ -177,17 +177,20 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: 6d1438b3-eee4-4d17-a3dd-0d3946e16dce
-                        Position: {X: 5.627159, Y: 5.206968, Z: 7.6314588}
+                        Position: {X: 3.0306542, Y: 5.206968, Z: 2.7590535}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            5e706c595a8ed79e8127ca2dbe4ff841: ref!! cda4ecb8-a0ed-4c04-aecc-fcb4812b41d2
+                            fcaff8bfc7ccc2997d1ad89405f6483d: ref!! cda4ecb8-a0ed-4c04-aecc-fcb4812b41d2
                             4c6bcbb9739788ace98ad12051002038: ref!! 2ec71aee-0f47-4910-b297-f9b3bec233e0
                             4d9bd6f25c2d1dab566754058fe466a2: ref!! cc01371b-f3ef-4969-b9f8-16b40dea5f9e
                     24e554ca1177df07bc9473147d12c446: !SplineComponent
                         Id: bbfa513f-dc83-4d7c-bf2f-0ff8f245a86c
                         Loop: true
-                        Nodes: {}
+                        Nodes:
+                            e706a950956bc6e1a6d615287b67553d: ref!! b7076627-555f-4b24-b6f0-1688f4134f6b
+                            a5268efe20e6e447f9add4fe4bf46082: ref!! 5d83469a-c562-4db4-bd51-1f8ede6e42ab
+                            c7c0f1f65a6a71080dbe13705a991928: ref!! 8c227d15-36cc-4a26-bac7-f235bd75da5a
                         SplineRenderer:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
                             BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial

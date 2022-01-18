@@ -53,7 +53,7 @@ namespace SplineTools
                     //Show closest point on spline
                     var closestPositionInfo = spline.GetClosestPointOnSpline(Entity.Transform.WorldMatrix.TranslationVector);
                     closesPointOrb.Transform.UseTRS = false;
-                    closesPointOrb.Transform.WorldMatrix.TranslationVector = closestPositionInfo.ClosestPosition;
+                    closesPointOrb.Transform.WorldMatrix.TranslationVector = closestPositionInfo.Position;
                     closesPointOrb.Transform.UpdateLocalFromWorld();
                 }
             }

@@ -17,22 +17,21 @@ namespace SplineTools
 
         public override void Start()
         {
-            var r = new Random(Game.TargetElapsedTime.Milliseconds);
             var nodePositions = new Vector3[3]
             {
                 new Vector3(4, 1, 0),
-                new Vector3(0, 1, 2),
+                new Vector3(0, 2, 2),
                 new Vector3(-2, 1, -1)
             };
 
             var tangents = new Vector3[6]
             {
-                new Vector3(-2, 0, -4), //Node 1 - in
-                new Vector3(1, 0, 2),   //Node 2 - in
-                new Vector3(2, 0, 1),   //Node 3 - in
-                new Vector3(2, 0, 5),   //Node 3 - out
-                new Vector3(-3, 0, 1),  //Node 2 - out
-                new Vector3(1, 0, 1)    //Node 1 - out
+                new Vector3(0, 1, 4),   //Node 1 - out
+                new Vector3(-1, 0, -3), //Node 1 - in
+                new Vector3(4, 1, -2), //Node 2 - out
+                new Vector3(-3, 0, 2),  //Node 2 - in
+                new Vector3(-5, -1, -1), //Node 3 - out
+                new Vector3(4, 0, 0)    //Node 3 - in
             };
 
             splineComponent = new SplineComponent();
@@ -41,12 +40,7 @@ namespace SplineTools
             for (int i = 0; i < nodePositions.Length; i++)
             {
                 var nodeEntity = new Entity(nodePositions[i]);
-                var nodeComponent = new SplineNodeComponent(20, tangents[i], tangents[^1]);
-                //var nodeComponent = new SplineNodeComponent();
-
-                //nodeComponent.SplineNode.Segments = 20;
-                //nodeComponent.SplineNode.TangentOutLocal = new Vector3(r.Next(-4, 4), 0, r.Next(-4, 4));
-                //nodeComponent.SplineNode.TangentInLocal = new Vector3(r.Next(-4, 4), 0, r.Next(-4, 4));
+                var nodeComponent = new SplineNodeComponent(50, tangents[i*2], tangents[i*2+1]);
                 nodeEntity.Add(nodeComponent);
 
                 Entity.AddChild(nodeEntity);
@@ -62,6 +56,7 @@ namespace SplineTools
 
         public override void Update()
         {
+            //Press Space to toggle Looping of the spline
             if (Input.IsKeyPressed(Keys.Space))
             {
                 Looping = !Looping;
