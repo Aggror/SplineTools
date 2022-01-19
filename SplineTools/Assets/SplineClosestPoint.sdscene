@@ -8,7 +8,6 @@ Hierarchy:
     RootParts:
         - ref!! b266704c-c4a0-4e01-9532-eda115dd958b
         - ref!! 3e1b4f23-94d4-4d99-acac-bb27a11928cb
-        - ref!! 4f0d9199-388e-4a02-8a91-cc85b9a31cb9
         - ref!! e808954f-45b1-4393-8910-eda0660dfaca
         - ref!! 54e3cc76-f969-4fcd-9be4-b542a4da70e3
         - ref!! 4d8f867b-ac00-4c7a-ac25-1dffa0c38c5a
@@ -86,23 +85,6 @@ Hierarchy:
                         Model: 136576a0-e08f-4b73-aef1-03df8e422709:Ground
                         Materials: {}
         -   Entity:
-                Id: 4f0d9199-388e-4a02-8a91-cc85b9a31cb9
-                Name: Skybox
-                Components:
-                    6765cfc9a80537a3ab7317b8d481503f: !TransformComponent
-                        Id: ea93e5f9-e79e-48f6-a67f-067f926da1ec
-                        Position: {X: 0.0, Y: -1.5896411, Z: -2.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    627ddcc4fbac9e2a0fa9eebf4216c003: !BackgroundComponent
-                        Id: ba1bc83b-f99e-4b24-8b77-0f1bccac480f
-                        Texture: 52d15a47-9d83-4348-8094-09f5052c33cd:Skybox texture
-                    7ee3c3310f4080911fe8617a53c969b9: !LightComponent
-                        Id: bd397a8e-0ed1-47e1-b565-a64ff3c1dc6a
-                        Type: !LightSkybox
-                            Skybox: 18d18ac7-8316-48e8-9a06-cf3336cbd083:Skybox
-        -   Entity:
                 Id: 54e3cc76-f969-4fcd-9be4-b542a4da70e3
                 Name: Sphere
                 Components:
@@ -173,7 +155,7 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: a649b25b-e35e-4813-8909-f62fcd2d1c40
-                        Position: {X: -2.1593735, Y: 0.66299915, Z: -5.7306237}
+                        Position: {X: -3.2329319, Y: 0.66299915, Z: -5.0517516}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -182,7 +164,7 @@ Hierarchy:
                             4d9bd6f25c2d1dab566754058fe466a2: ref!! e35d7064-bcf3-4b9f-83fb-85a5f6e34b0d
                     24e554ca1177df07bc9473147d12c446: !SplineComponent
                         Id: 608a47be-006e-4a4a-98d0-4a93d05cf8b4
-                        Loop: false
+                        Loop: true
                         Nodes:
                             48a71506b58fe4ee8c9bde1dd10f1e92: ref!! a26519e8-06f8-4ae3-a2c0-c4a88efa1627
                             94acaea6c3ec889133d3966f9f992313: ref!! bb54d273-9304-42e2-8626-1389faa0ec3e

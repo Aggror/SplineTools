@@ -12,19 +12,18 @@ namespace SplineTools
     {
         public Material splineMaterial;
         public Material boundingBoxMaterial;
-        public bool Looping = false;
         private SplineComponent splineComponent;
 
         public override void Start()
         {
-            var nodePositions = new Vector3[3]
+            var nodePositions = new Vector3[]
             {
                 new Vector3(4, 1, 0),
                 new Vector3(0, 2, 2),
                 new Vector3(-2, 1, -1)
             };
 
-            var tangents = new Vector3[6]
+            var tangents = new Vector3[]
             {
                 new Vector3(0, 1, 4),   //Node 1 - out
                 new Vector3(-1, 0, -3), //Node 1 - in
@@ -59,8 +58,7 @@ namespace SplineTools
             //Press Space to toggle Looping of the spline
             if (Input.IsKeyPressed(Keys.Space))
             {
-                Looping = !Looping;
-                splineComponent.Loop = Looping;
+                splineComponent.Loop = !splineComponent.Loop;
             }
         }
     }

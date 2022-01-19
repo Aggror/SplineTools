@@ -8,7 +8,6 @@ Hierarchy:
     RootParts:
         - ref!! ed29e5d9-59be-4625-bf3d-f579275d85c4
         - ref!! 7049b1b8-dd5e-4fcf-9975-705783177aae
-        - ref!! be8dbba9-9b6f-4832-8752-eb49add90c4f
         - ref!! be9525c9-4373-4532-a3a2-200eb09dae09
         - ref!! 1eab226b-1011-41bf-8ef7-07fc3970f00b
     Parts:
@@ -52,23 +51,6 @@ Hierarchy:
                                 BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
-                Id: be8dbba9-9b6f-4832-8752-eb49add90c4f
-                Name: Skybox
-                Components:
-                    6765cfc9a80537a3ab7317b8d481503f: !TransformComponent
-                        Id: 8ff23669-c11d-4c22-96d5-484afec85d57
-                        Position: {X: 0.0, Y: -1.5896411, Z: -2.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    627ddcc4fbac9e2a0fa9eebf4216c003: !BackgroundComponent
-                        Id: 7a80ba1b-d371-4072-8b9e-c2ac0b65ffd2
-                        Texture: 52d15a47-9d83-4348-8094-09f5052c33cd:Skybox texture
-                    7ee3c3310f4080911fe8617a53c969b9: !LightComponent
-                        Id: a668f9b0-8adc-406b-9e5d-969bcb8eda3e
-                        Type: !LightSkybox
-                            Skybox: 18d18ac7-8316-48e8-9a06-cf3336cbd083:Skybox
-        -   Entity:
                 Id: be9525c9-4373-4532-a3a2-200eb09dae09
                 Name: SplineByCode
                 Components:
@@ -86,7 +68,6 @@ Hierarchy:
                         Id: 94b4dbad-48df-4a24-8bfc-e16af498c97f
                         splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
                         boundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial
-                        Looping: false
         -   Entity:
                 Id: ed29e5d9-59be-4625-bf3d-f579275d85c4
                 Name: Camera
