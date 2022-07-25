@@ -6,11 +6,11 @@ ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
-        - ref!! b266704c-c4a0-4e01-9532-eda115dd958b
+        - ref!! c37e7bf2-9899-4c95-86e3-80a72730891e
         - ref!! 3e1b4f23-94d4-4d99-acac-bb27a11928cb
-        - ref!! e808954f-45b1-4393-8910-eda0660dfaca
-        - ref!! 54e3cc76-f969-4fcd-9be4-b542a4da70e3
         - ref!! 4d8f867b-ac00-4c7a-ac25-1dffa0c38c5a
+        - ref!! 54e3cc76-f969-4fcd-9be4-b542a4da70e3
+        - ref!! e808954f-45b1-4393-8910-eda0660dfaca
         - ref!! fc32323c-c144-4b8b-b62a-41ab48c8c514
     Parts:
         -   Entity:
@@ -86,7 +86,7 @@ Hierarchy:
                         Materials: {}
         -   Entity:
                 Id: 54e3cc76-f969-4fcd-9be4-b542a4da70e3
-                Name: Sphere
+                Name: MoveableSphere
                 Components:
                     04959afeca683178eba57175cb4f2520: !TransformComponent
                         Id: 6c9d6eda-8b69-41b9-b0d7-b1369de56891
@@ -102,7 +102,7 @@ Hierarchy:
                         Id: 20ccdd62-c6f2-4869-af70-896bbfd6df0a
                         MoveSpeed: 7.0
                         spline: ref!! 608a47be-006e-4a4a-98d0-4a93d05cf8b4
-                        closesPointOrb: ref!! e808954f-45b1-4393-8910-eda0660dfaca
+                        closestPointOrb: ref!! e808954f-45b1-4393-8910-eda0660dfaca
         -   Entity:
                 Id: 77889904-a399-4eab-b8b0-d3cb6091f1e1
                 Name: Node1
@@ -120,23 +120,46 @@ Hierarchy:
                             TangentOutLocal: {X: -4.0, Y: 0.0, Z: -4.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
-                Id: b266704c-c4a0-4e01-9532-eda115dd958b
+                Id: 8ba9e38e-85b5-445d-b1a7-92cb305241cb
                 Name: Camera
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
-                        Id: ec74c7cd-017d-468a-a89e-15f29cb7db28
-                        Position: {X: -0.60049677, Y: 19.145027, Z: -1.4600716}
-                        Rotation: {X: 4.2124555E-08, Y: 0.70710677, Z: 0.70710677, W: -4.2124555E-08}
+                        Id: 1e7b52f7-e6f9-4b5d-95cd-b222deabe69c
+                        Position*: {X: 0.41119766, Y: 10.618824, Z: -9.819916}
+                        Rotation*: {X: 5.326483E-08, Y: 0.89410853, Z: 0.44785035, W: -2.6679839E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
-                        Id: 7c5ec610-0cb7-4dc0-9766-aad86b2e22d0
+                        Id: f8f7e9db-5346-492c-92c4-cbf649c78c28
                         Name: null
                         Projection: Perspective
                         Slot: 74df2f5f-7b3c-4819-8415-58dfc3199aea
+                    98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
+                        Id: d07c5a0d-5fc1-49f8-ac28-fea14c9e0227
+                        Scenes:
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
+                            f253d21f3b8d53ce386749481c6ab0d5: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
+                            ea1f459b886057966cb5e1c184d95da4: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
+                    045639e1576b95de5f5621cbf2a35e3b: ~(Deleted)
+            Base:
+                BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
+                BasePartId: 08472225-3859-4500-adbc-a22796f88494
+                InstanceId: 949838e0-bbd0-4bb9-b6be-cc5bb94d0135
+        -   Entity:
+                Id: c37e7bf2-9899-4c95-86e3-80a72730891e
+                Name: Camera
+                Components:
+                    5dbea5b1217e52444b04f0b204c3b251: !TransformComponent
+                        Id: 350319cd-052d-4d99-8786-bbcc0ed75099
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            169e056955fd1a4257f6f3085bef4ffc: ref!! 1e7b52f7-e6f9-4b5d-95cd-b222deabe69c
         -   Entity:
                 Id: e808954f-45b1-4393-8910-eda0660dfaca
-                Name: Orb
+                Name: ClosestPointOrb
                 Components:
                     04959afeca683178eba57175cb4f2520: !TransformComponent
                         Id: 22e80154-2d73-4deb-b3cc-1050e23b4f73
@@ -148,14 +171,14 @@ Hierarchy:
                         Id: 0383b424-206e-48d0-ac07-b8dd2a0cc75f
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
                         Materials:
-                            602ed76b09302d6acff764ddeb6629ea~0: 47fe2582-86c3-42c8-ab65-978342467add:PointOfInterest
+                            602ed76b09302d6acff764ddeb6629ea~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
         -   Entity:
                 Id: fc32323c-c144-4b8b-b62a-41ab48c8c514
                 Name: Spline
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: a649b25b-e35e-4813-8909-f62fcd2d1c40
-                        Position: {X: -3.2329319, Y: 0.66299915, Z: -5.0517516}
+                        Position: {X: -2.9994745, Y: 0.66299915, Z: -4.8125925}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -170,7 +193,7 @@ Hierarchy:
                             94acaea6c3ec889133d3966f9f992313: ref!! bb54d273-9304-42e2-8626-1389faa0ec3e
                             03c162bb1f60ab4d191484183a34c6d5: ref!! 8687eba1-a116-4cfe-85ad-cf7c3fea27f2
                         SplineRenderer:
-                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:SplineMaterial
-                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:SplineBoundingBoxMaterial
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
                             Segments: true
                             BoundingBox: false

@@ -1,64 +1,34 @@
 ﻿using Stride.Core.Mathematics;
+using Stride.Core.Serialization;
 using Stride.Engine;
-using Stride.Engine.Splines.Components;
 using Stride.Input;
-using Stride.Rendering;
-using System;
+using System.Collections.Generic;
 
 namespace SplineTools
 {
 
-    public class SplineByCode : SyncScript
+    public class SwitchScene: SyncScript
     {
-        public Material splineMaterial;
-        public Material boundingBoxMaterial;
-        private SplineComponent splineComponent;
+        public List<UrlReference<Scene>> Scenes = new List<UrlReference<Scene>>();
 
         public override void Start()
         {
-            var nodePositions = new Vector3[]
-            {
-                new Vector3(4, 1, 0),
-                new Vector3(0, 2, 2),
-                new Vector3(-2, 1, -1)
-            };
 
-            var tangents = new Vector3[]
-            {
-                new Vector3(0, 1, 4),   //Node 1 - out
-                new Vector3(-1, 0, -3), //Node 1 - in
-                new Vector3(4, 1, -2), //Node 2 - out
-                new Vector3(-3, 0, 2),  //Node 2 - in
-                new Vector3(-5, -1, -1), //Node 3 - out
-                new Vector3(4, 0, 0)    //Node 3 - in
-            };
-
-            splineComponent = new SplineComponent();
-            Entity.Add(splineComponent);
-
-            for (int i = 0; i < nodePositions.Length; i++)
-            {
-                var nodeEntity = new Entity(nodePositions[i]);
-                var nodeComponent = new SplineNodeComponent(50, tangents[i*2], tangents[i*2+1]);
-                nodeEntity.Add(nodeComponent);
-
-                Entity.AddChild(nodeEntity);
-                splineComponent.Nodes.Add(nodeComponent);
-            }
-
-            // We use a spline renderer if we want to show our spline in the game
-            splineComponent.SplineRenderer.SegmentsMaterial = splineMaterial;
-            splineComponent.SplineRenderer.Segments = true;
-            splineComponent.SplineRenderer.BoundingBoxMaterial = boundingBoxMaterial;
-            splineComponent.SplineRenderer.BoundingBox = true;
         }
 
         public override void Update()
         {
-            //Press Space to toggle Looping of the spline
-            if (Input.IsKeyPressed(Keys.Space))
+            int DrawY = 20;
+            for (int i = 0; i < Scenes.Count; i++)
             {
-                splineComponent.Loop = !splineComponent.Loop;
+                DebugText.Print($"Press {i+1} to load '{Scenes[i]}' ", new Int2(20, DrawY));
+
+                if (Input.IsKeyPressed((Keys)i + 35)) //35 = D1, 36 = D2 etc
+                {
+                    Content.Unload(SceneSystem.SceneInstance.RootScene);
+                    SceneSystem.SceneInstance.RootScene = Content.Load(Scenes[i]);
+                }
+                DrawY += 20;
             }
         }
     }

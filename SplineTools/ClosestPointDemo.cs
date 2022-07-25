@@ -10,7 +10,7 @@ namespace SplineTools
     {
         public float MoveSpeed = 4.0f;
         public SplineComponent spline;
-        public Entity closesPointOrb;
+        public Entity closestPointOrb;
 
         public override void Start()
         {
@@ -52,9 +52,9 @@ namespace SplineTools
 
                     //Show closest point on spline
                     var closestPositionInfo = spline.GetClosestPointOnSpline(Entity.Transform.WorldMatrix.TranslationVector);
-                    closesPointOrb.Transform.UseTRS = false;
-                    closesPointOrb.Transform.WorldMatrix.TranslationVector = closestPositionInfo.Position;
-                    closesPointOrb.Transform.UpdateLocalFromWorld();
+                    closestPointOrb.Transform.UseTRS = false;
+                    closestPointOrb.Transform.WorldMatrix.TranslationVector = closestPositionInfo.Position;
+                    closestPointOrb.Transform.UpdateLocalFromWorld();
                 }
             }
         }
