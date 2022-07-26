@@ -125,8 +125,8 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 1e7b52f7-e6f9-4b5d-95cd-b222deabe69c
-                        Position*: {X: 0.41119766, Y: 10.618824, Z: -9.819916}
-                        Rotation*: {X: 5.326483E-08, Y: 0.89410853, Z: 0.44785035, W: -2.6679839E-08}
+                        Position*: {X: 0.6168394, Y: 12.213534, Z: -3.0035405}
+                        Rotation*: {X: 4.6993193E-08, Y: 0.7888322, Z: 0.61460865, W: -3.661415E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent

@@ -110,7 +110,7 @@ Hierarchy:
                         Id: 15d3709c-1a20-4306-a7c5-90ef8cef1fa5
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
                         Materials: {}
-                    50d4db185ef69df2132c50933cd9d178: !SplineTools.SplineByCode,SplineTools
-                        Id: 94b4dbad-48df-4a24-8bfc-e16af498c97f
-                        splineMaterial: null
-                        boundingBoxMaterial: null
+                    17e90393d7926458028591e653f0c2b4: !SplineTools.SplineByCode,SplineTools
+                        Id: 42719ba8-bb39-4ae6-a301-df7f559233af
+                        splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                        boundingBoxMaterial: 47fe2582-86c3-42c8-ab65-978342467add:Red
