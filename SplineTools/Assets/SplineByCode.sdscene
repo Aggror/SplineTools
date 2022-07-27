@@ -31,7 +31,7 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 8020cefe-cc05-4c4f-aff3-f829a5d8e12e
-                        Position*: {X: -8.277033, Y: 10.618824, Z: -12.7515335}
+                        Position*: {X: -4.947288, Y: 8.515034, Z: -12.612318}
                         Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -113,4 +113,4 @@ Hierarchy:
                     17e90393d7926458028591e653f0c2b4: !SplineTools.SplineByCode,SplineTools
                         Id: 42719ba8-bb39-4ae6-a301-df7f559233af
                         splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
-                        boundingBoxMaterial: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                        boundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
