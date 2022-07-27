@@ -13,6 +13,8 @@ namespace SplineTools
         public Material boundingBoxMaterial;
         private SplineComponent splineComponent;
         private Random random;
+        private bool toggleLoop = true;
+        private bool toggleBoundingBox = true;
 
         public override void Start()
         {
@@ -24,22 +26,23 @@ namespace SplineTools
         {
             var nodePositions = new Vector3[]
             {
-                new Vector3(4, 1, 0),
-                new Vector3(0, 2, 2),
+                new Vector3(RandomY(-2, 2), 1, 0),
+                new Vector3(0, 2, RandomY(-2, 2)),
                 new Vector3(-2, 1, -1)
             };
 
             var tangents = new Vector3[]
             {
-                new Vector3(0,  RandomY(), 4),   //Node 1 - out
-                new Vector3(-1, RandomY(), -3), //Node 1 - in
-                new Vector3(4,  RandomY(), -2), //Node 2 - out
-                new Vector3(-3, RandomY(), 2),  //Node 2 - in
-                new Vector3(-5, RandomY(), -1), //Node 3 - out
-                new Vector3(4,  RandomY(), 0)    //Node 3 - in
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3)),  //Node 1 - out
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 0)), //Node 1 - in
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3)), //Node 2 - out
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 3)), //Node 2 - in
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 0)), //Node 3 - out
+                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3))  //Node 3 - in
             };
 
             splineComponent = new SplineComponent();
+            splineComponent.Loop = toggleLoop;
             Entity.Add(splineComponent);
 
             for (int i = 0; i < nodePositions.Length; i++)
@@ -52,22 +55,18 @@ namespace SplineTools
                 splineComponent.Nodes.Add(nodeComponent);
             }
 
-            // We use a spline renderer if we want to show our spline in the game
+            // We use a spline renderer if we want to view our spline in the game
             splineComponent.SplineRenderer.SegmentsMaterial = splineMaterial;
             splineComponent.SplineRenderer.Segments = true;
             splineComponent.SplineRenderer.BoundingBoxMaterial = boundingBoxMaterial;
-            splineComponent.SplineRenderer.BoundingBox = true;
-        }
-
-        public int RandomY()
-        {
-            return random.Next(-2, 2);
+            splineComponent.SplineRenderer.BoundingBox = toggleBoundingBox;
         }
 
         public override void Update()
         {
             DebugText.Print($"Press Space to create spline", new Int2(600, 20));
             DebugText.Print($"Press L to toggle spline 'looping'", new Int2(600, 40));
+            DebugText.Print($"Press B to toggle spline 'Boundingbox render'", new Int2(600, 60));
 
             //Generate a new spline by pressing space
             if (Input.IsKeyPressed(Keys.Space))
@@ -76,11 +75,22 @@ namespace SplineTools
                 GenerateSpline();
             }
 
-            //Press S to toggle Looping of the spline
+            //Press L to toggle Looping of the spline
             if (Input.IsKeyPressed(Keys.L))
             {
-                splineComponent.Loop = !splineComponent.Loop;
+                splineComponent.Loop = toggleLoop = !toggleLoop;
             }
+
+            //Press B to toggle Boundingbox of the spline
+            if (Input.IsKeyPressed(Keys.B))
+            {
+                splineComponent.SplineRenderer.BoundingBox = toggleBoundingBox = !toggleBoundingBox;
+            }
+        }
+
+        public int RandomY(int min, int max)
+        {
+            return random.Next(min, max);
         }
     }
 }
