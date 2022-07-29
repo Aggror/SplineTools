@@ -26,19 +26,19 @@ namespace SplineTools
         {
             var nodePositions = new Vector3[]
             {
-                new Vector3(RandomY(-2, 2), 1, 0),
-                new Vector3(0, 2, RandomY(-2, 2)),
+                new Vector3(Random(-2, 2), 1, 0),
+                new Vector3(0, 2, Random(-2, 2)),
                 new Vector3(-2, 1, -1)
             };
 
             var tangents = new Vector3[]
             {
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3)),  //Node 1 - out
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 0)), //Node 1 - in
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3)), //Node 2 - out
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 3)), //Node 2 - in
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(-3, 0)), //Node 3 - out
-                new Vector3(RandomY(-1, 2), RandomY(-4, 4), RandomY(0,  3))  //Node 3 - in
+                new Vector3(Random(-2, 2), Random(-1, 2), Random(0,  3)),  //Node 1 - out
+                new Vector3(Random(-1, 3), Random(-1, 2), Random(-3, 0)), //Node 1 - in
+                new Vector3(Random(-1, 4), Random(-1, 2), Random(0,  3)), //Node 2 - out
+                new Vector3(Random(-2, 2), Random(-1, 2), Random(-3, 3)), //Node 2 - in
+                new Vector3(Random(-1, 3), Random(-1, 2), Random(-3, 0)), //Node 3 - out
+                new Vector3(Random(-4, 1), Random(-1, 2), Random(0,  3))  //Node 3 - in
             };
 
             splineComponent = new SplineComponent();
@@ -88,7 +88,7 @@ namespace SplineTools
             }
         }
 
-        public int RandomY(int min, int max)
+        private int Random(int min, int max)
         {
             return random.Next(min, max);
         }
