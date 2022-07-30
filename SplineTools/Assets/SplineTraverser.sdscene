@@ -10,9 +10,9 @@ Hierarchy:
         - ref!! 96585e19-9f9d-4dbc-b376-286cfe5cc8ad
         - ref!! f4de0b33-627b-488e-ad66-4b8a4e0154ff
         - ref!! 6bab6356-63a2-4b89-b33e-15f1b2c2bb2e
-        - ref!! a407ec3a-be95-4170-903d-33c6d2847593
         - ref!! f4bc42c2-e210-4a53-86b8-aa64c8ee678d
         - ref!! 9a54e97d-ccc5-4a99-bfa0-71f64a0d71a8
+        - ref!! a407ec3a-be95-4170-903d-33c6d2847593
     Parts:
         -   Entity:
                 Id: 1118b034-82f7-41cd-823a-4c648d98af04
@@ -85,10 +85,10 @@ Hierarchy:
                         Scenes:
                             b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:MainScene
                             b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
-                            f253d21f3b8d53ce386749481c6ab0d5: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
                             ea1f459b886057966cb5e1c184d95da4: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
                             4009272cbe5bcdd56e3f705eb8c7216e: 7b5a7073-7dba-4190-8e98-b5554860c195:SplineTraverserByCode
-                            7212c1f5ee4007dd2296f38d6b0c3041: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Rotate
+                            7212c1f5ee4007dd2296f38d6b0c3041: 4688a67a-2aec-4fc3-816c-c5a52355f096:SplineTraverserEvents
+                            10a479b129b84092afded07ba36cee7f: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -140,7 +140,7 @@ Hierarchy:
                 Components:
                     3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
                         Id: 3f220499-c6fa-4548-b576-676fa4626d53
-                        Position: {X: 1.0773351, Y: 0.84910035, Z: -1.1296098}
+                        Position: {X: 5.525872, Y: 0.6553506, Z: -0.76984715}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.1749723, Y: 0.1749723, Z: 0.1749723}
                         Children: {}
@@ -152,7 +152,7 @@ Hierarchy:
                     ed55128917da1b7100defb36aca2cfcc: !SplineTraverserComponent
                         Id: 240df15b-a137-4d74-a748-576dd70c694b
                         SplineComponent: ref!! 81e0b535-aa12-42c8-a714-e04e12138caf
-                        Speed: -1.0
+                        Speed: -0.5
                         IsMoving: true
         -   Entity:
                 Id: a407ec3a-be95-4170-903d-33c6d2847593

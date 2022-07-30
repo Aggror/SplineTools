@@ -139,10 +139,10 @@ Hierarchy:
                         Scenes:
                             b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:MainScene
                             b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
-                            f253d21f3b8d53ce386749481c6ab0d5: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
                             ea1f459b886057966cb5e1c184d95da4: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
                             4009272cbe5bcdd56e3f705eb8c7216e: 7b5a7073-7dba-4190-8e98-b5554860c195:SplineTraverserByCode
-                            7212c1f5ee4007dd2296f38d6b0c3041: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Rotate
+                            7212c1f5ee4007dd2296f38d6b0c3041: 4688a67a-2aec-4fc3-816c-c5a52355f096:SplineTraverserEvents
+                            10a479b129b84092afded07ba36cee7f: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
                     045639e1576b95de5f5621cbf2a35e3b: ~(Deleted)
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
@@ -154,7 +154,7 @@ Hierarchy:
                 Components:
                     5dbea5b1217e52444b04f0b204c3b251: !TransformComponent
                         Id: 350319cd-052d-4d99-8786-bbcc0ed75099
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: 0.7952759, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -180,7 +180,7 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: a649b25b-e35e-4813-8909-f62fcd2d1c40
-                        Position: {X: -2.9994745, Y: 0.66299915, Z: -4.8125925}
+                        Position: {X: -2.9994745, Y: 0.056500778, Z: -4.8125925}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:

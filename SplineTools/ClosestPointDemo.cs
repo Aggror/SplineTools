@@ -18,7 +18,8 @@ namespace SplineTools
 
         public override void Update()
         {
-            DebugText.Print($"Use WASD to move the sphere around. The red sphere indicates closest point in spline", new Int2(600, 20));
+            DebugText.Print($"Use WASD to move the sphere around.", new Int2(600, 20));
+            DebugText.Print($"The red sphere indicates closest point on the spline", new Int2(600, 40));
 
             float deltaTime = (float)Game.UpdateTime.Elapsed.TotalSeconds;
             Vector3 dir = new();

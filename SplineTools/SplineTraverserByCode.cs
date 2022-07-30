@@ -13,7 +13,7 @@ namespace SplineTools
 
         public override void Start()
         {
-            if(splineComponent == null)
+            if (splineComponent == null)
             {
                 throw new NullReferenceException("splineComponent is empty");
             }
@@ -27,16 +27,19 @@ namespace SplineTools
 
         public override void Update()
         {
-            DebugText.Print($"Pres Space to stop/resume traverser. Moving:{splineTraverserComponent.SplineTraverser.IsMoving}", new Int2(600, 20));
-            DebugText.Print($"Use mouse wheel to adjust speed {splineTraverserComponent.SplineTraverser.Speed}", new Int2(600, 40));
+            DebugText.Print($"Press Space to stop/resume traverser. Moving:{splineTraverserComponent.SplineTraverser.IsMoving}", new Int2(600, 20));
+            DebugText.Print($"Use mouse wheel to adjust speed {splineTraverserComponent.SplineTraverser.Speed:0.00}", new Int2(600, 40));
 
             if (Input.IsKeyPressed(Keys.Space))
             {
-                splineTraverserComponent.SplineTraverser.IsMoving = !splineTraverserComponent.SplineTraverser.IsMoving;
+                splineTraverserComponent.IsMoving = !splineTraverserComponent.IsMoving;
             }
 
             var scrollValue = Input.MouseWheelDelta;
-            splineTraverserComponent.SplineTraverser.Speed += scrollValue * 0.1f;
+            if (scrollValue != 0)
+            {
+                splineTraverserComponent.Speed += (float)Math.Round(scrollValue * 0.1f, 1);
+            }
         }
 
     }
