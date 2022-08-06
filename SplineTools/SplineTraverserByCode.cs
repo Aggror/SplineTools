@@ -9,6 +9,8 @@ namespace SplineTools
     public class SplineTraverserByCode : SyncScript
     {
         public SplineComponent splineComponent;
+        public float Speed = 0.5f;
+
         private SplineTraverserComponent splineTraverserComponent;
 
         public override void Start()
@@ -21,13 +23,15 @@ namespace SplineTools
             splineTraverserComponent = new SplineTraverserComponent();
             splineTraverserComponent.SplineTraverser.Entity = Entity;
             splineTraverserComponent.SplineComponent = splineComponent;
+            splineTraverserComponent.Speed = Speed;
+            splineTraverserComponent.IsRotating = true;
+            splineTraverserComponent.IsMoving = true;
             Entity.Add(splineTraverserComponent);
         }
 
-
         public override void Update()
         {
-            DebugText.Print($"Press Space to stop/resume traverser. Moving:{splineTraverserComponent.SplineTraverser.IsMoving}", new Int2(600, 20));
+            DebugText.Print($"Press space to toggle movement. Moving:{splineTraverserComponent.IsMoving}", new Int2(600, 20));
             DebugText.Print($"Use mouse wheel to adjust speed {splineTraverserComponent.SplineTraverser.Speed:0.00}", new Int2(600, 40));
 
             if (Input.IsKeyPressed(Keys.Space))

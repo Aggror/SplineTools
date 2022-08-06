@@ -46,6 +46,7 @@ Hierarchy:
                     0a9411ecfb0f770936e23a40e2ca36d7: !SplineTools.SplineTraverserByCode,SplineTools
                         Id: f8a94ac6-782a-4ba6-ba3b-0f4e7695087e
                         splineComponent: ref!! 54c3bdf9-f73f-4e5f-8d6b-303676fbaed1
+                        Speed: 0.5
         -   Entity:
                 Id: 56ccd4f7-032c-4529-8ba6-6f17610ff8fa
                 Name: Camera
@@ -116,10 +117,10 @@ Hierarchy:
                         Scenes:
                             b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:MainScene
                             b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
-                            4009272cbe5bcdd56e3f705eb8c7216e: 7b5a7073-7dba-4190-8e98-b5554860c195:SplineTraverserByCode
-                            7212c1f5ee4007dd2296f38d6b0c3041: 4688a67a-2aec-4fc3-816c-c5a52355f096:SplineTraverserEvents
-                            10a479b129b84092afded07ba36cee7f: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:SplineTraverserEvents
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494

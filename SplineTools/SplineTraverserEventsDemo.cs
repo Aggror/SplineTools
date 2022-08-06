@@ -11,12 +11,14 @@ namespace SplineTools
         public Entity SplineNodeReachedParticle;
         public bool ReverseOnEnd;
         private SplineTraverserComponent traverserComponent;
+        private float orignalTravelSpeed = 0;
 
         public override void Start()
         {
             traverserComponent = Entity.Get<SplineTraverserComponent>();
             traverserComponent.SplineTraverser.OnSplineEndReached += SplineTraverser_OnSplineEndReached;
             traverserComponent.SplineTraverser.OnSplineNodeReached += SplineTraverser_OnSplineNodeReached;
+            orignalTravelSpeed = traverserComponent.SplineTraverser.Speed;
         }
 
         private void SplineTraverser_OnSplineEndReached(SplineNode splineNode)
@@ -25,7 +27,7 @@ namespace SplineTools
 
             if (ReverseOnEnd)
             {
-                traverserComponent.SplineTraverser.Speed *= -1;
+                traverserComponent.SplineTraverser.Speed = orignalTravelSpeed * - 1;
             }
         }
 
