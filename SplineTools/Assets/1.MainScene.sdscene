@@ -92,8 +92,10 @@ Hierarchy:
                             c7c0f1f65a6a71080dbe13705a991928: ref!! b8f20d1d-9533-40f3-866c-8ecd1a1453b5
                         SplineRenderer:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                            NodesMaterial: null
                             BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
                             Segments: true
+                            Nodes: false
                             BoundingBox: false
         -   Folder: null
             Entity:
@@ -173,12 +175,13 @@ Hierarchy:
                     98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
                         Id: 283f6514-e020-457c-89eb-8d3c3c2cd10e
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 13836056-32b5-43b5-8f33-a772afc5291a:SplineByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:SplineTraverserEvents
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -215,7 +218,7 @@ Hierarchy:
                 Components:
                     12849867b907b4f072ad6b0a722e7113: !TransformComponent
                         Id: f961e237-a213-49c6-a941-7d2cc416ad45
-                        Position: {X: 2.423467, Y: -0.22896895, Z: 1.1703212}
+                        Position: {X: 0.65519595, Y: -0.22896895, Z: 0.5100136}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -223,7 +226,7 @@ Hierarchy:
                         Id: 20aa2014-5bfc-4be5-975c-455bd6b18349
                         SplineNode:
                             Segments: 40
-                            TangentOutLocal: {X: -2.0, Y: 0.0, Z: -1.0}
+                            TangentOutLocal: {X: 3.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
         -   Entity:
                 Id: e0abbc72-ef7c-4f6c-98cb-76280655e234
@@ -279,6 +282,8 @@ Hierarchy:
                             c7c0f1f65a6a71080dbe13705a991928: ref!! 8176597e-13b3-4d06-9718-10bd95409059
                         SplineRenderer:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                            NodesMaterial: null
                             BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
                             Segments: true
+                            Nodes: false
                             BoundingBox: false
