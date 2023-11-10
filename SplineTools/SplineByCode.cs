@@ -26,19 +26,19 @@ namespace SplineTools
         {
             var nodePositions = new Vector3[]
             {
-                new Vector3(Random(-4, 4), 1, 0),
-                new Vector3(0, 2, Random(-2, 2)),
-                new Vector3(-2, 1, Random(-2, 2))
+                new (Random(-4, 4), 1, 0),
+                new (0, 2, Random(-2, 2)),
+                new (-2, 1, Random(-2, 2))
             };
 
             var tangents = new Vector3[]
             {
-                new Vector3(Random(-2, 2), Random(-2, 2), Random(0,  3)), //Node 1 - out
-                new Vector3(Random(-3, 3), Random(-2, 2), Random(-3, 0)), //Node 1 - in
-                new Vector3(Random(-1, 4), Random(-2, 2), Random(0,  3)), //Node 2 - out
-                new Vector3(Random(-2, 2), Random(-2, 2), Random(-3, 3)), //Node 2 - in
-                new Vector3(Random(-1, 3), Random(-2, 2), Random(-3, 0)), //Node 3 - out
-                new Vector3(Random(-4, 1), Random(-2, 2), Random(0,  3))  //Node 3 - in
+                new (Random(-2, 2), Random(-2, 2), Random(0,  3)), //Node 1 - out
+                new (Random(-3, 3), Random(-2, 2), Random(-3, 0)), //Node 1 - in
+                new (Random(-1, 4), Random(-2, 2), Random(0,  3)), //Node 2 - out
+                new (Random(-2, 2), Random(-2, 2), Random(-3, 3)), //Node 2 - in
+                new (Random(-1, 3), Random(-2, 2), Random(-3, 0)), //Node 3 - out
+                new (Random(-4, 1), Random(-2, 2), Random(0,  3))  //Node 3 - in
             };
 
             splineComponent = new SplineComponent();
@@ -47,7 +47,7 @@ namespace SplineTools
 
             for (int i = 0; i < nodePositions.Length; i++)
             {
-                var nodeEntity = new Entity(nodePositions[i]);
+                var nodeEntity = new Entity("node"+i,nodePositions[i]);
                 var nodeComponent = new SplineNodeComponent(50, tangents[i * 2], tangents[i * 2 + 1]);
                 nodeEntity.Add(nodeComponent);
 
