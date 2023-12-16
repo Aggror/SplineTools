@@ -15,4 +15,5 @@ ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
 RootAssets:
+    - 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
     - cb026551-9c62-4058-9896-d2d3f36539fa:Camera

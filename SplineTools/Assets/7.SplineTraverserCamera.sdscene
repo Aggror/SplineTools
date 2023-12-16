@@ -185,6 +185,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: 3.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: -2.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 22a46959-9ebb-4817-b0d6-4297ae497845
                 Name: Ambient light
@@ -242,6 +245,7 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
                     75803d53350d25f4e32b7961de560093*: !SplineTools.BasicCameraController,SplineTools
                         Id: b6a1defa-0227-464e-afd4-39a7d1acba87
                         Gamepad: false
@@ -375,6 +379,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -4.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 4.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Folder: null
             Entity:
                 Id: 36c4eb78-92c1-4c26-bf49-7bb0eba8c540
@@ -737,6 +744,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.2, Y: 0.0, Z: 2.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 7fa72180-3f6e-4625-a47b-ea88ac591d24
                 Name: Tower
@@ -799,6 +809,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: -6.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 4.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 8f862aee-e101-4e6d-ace2-ecf834ac932f
                 Name: Tower
@@ -1144,7 +1157,7 @@ Hierarchy:
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
+                            Shadow: !LightDirectionalShadowMap
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
                                     FilterSize: Filter5x5
@@ -1171,6 +1184,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -2.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 3.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: c902517b-6b4f-4404-ba8c-f707d0c5e978
                 Name: Tower

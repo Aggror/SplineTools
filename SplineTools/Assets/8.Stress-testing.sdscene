@@ -1,0 +1,136 @@
+!SceneAsset
+Id: 881a00ce-94a4-4ee3-ab22-6b64a2321e60
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 88e7a5e8-32f0-459b-b962-0afdeeb5961c
+        - ref!! 0f1ff1f9-83f6-467f-a10b-00b6810a4ddc
+        - ref!! c28e5bfc-0656-4565-80df-29bd91cf5483
+        - ref!! ab9a7712-f5a1-41f3-ab02-0a907782630d
+    Parts:
+        -   Entity:
+                Id: 0f1ff1f9-83f6-467f-a10b-00b6810a4ddc
+                Name: Directional light
+                Components:
+                    2735ba6df4c5b50f232760f354230d8c: !TransformComponent
+                        Id: 5e54ab38-38ce-43e4-b78b-1cf19bae2f12
+                        Position: {X: -22.047579, Y: -1.5983908, Z: -17.825735}
+                        Rotation: {X: -0.08102894, Y: -0.9173682, Z: -0.24580808, W: -0.3024042}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d2d1d0606bd5517b9bb780f5c7356a67: !LightComponent
+                        Id: df74d55a-f478-493f-9f45-bf7c38f5604f
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: 2fbd8b00-3a35-42e9-b0eb-696989e2611f
+                Name: Camera
+                Components:
+                    f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
+                        Id: b9d1cb39-23c7-452a-833e-e4bf82ac9aee
+                        Position: {X: 6.519552, Y: 10.618824, Z: -4.101574}
+                        Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
+                        Id: a0f2d066-1339-4a5b-81ad-b46039ccd492
+                        Name: null
+                        Projection: Perspective
+                        Slot: 74df2f5f-7b3c-4819-8415-58dfc3199aea
+                    045639e1576b95de5f5621cbf2a35e3b: !SplineTools.BasicCameraController,SplineTools
+                        Id: d9ef9df6-a088-4cbc-a330-b4ef86738289
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                    98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
+                        Id: e42a723b-c293-4096-9e99-862d2ad04059
+                        Scenes:
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1*: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
+            Base:
+                BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
+                BasePartId: 08472225-3859-4500-adbc-a22796f88494
+                InstanceId: 90592ae6-d6bf-4365-a355-e2de298a9b83
+        -   Entity:
+                Id: 88e7a5e8-32f0-459b-b962-0afdeeb5961c
+                Name: Camera
+                Components:
+                    841ecd05e53d3b5aa0e68cfb8ccadcae: !TransformComponent
+                        Id: 31ba35d8-ad18-4b45-83b3-03f6c64d1c40
+                        Position: {X: -2.7823563, Y: -7.979999, Z: 1.9273406}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            f81f7590486f34d226a8cf37bee2d260: ref!! b9d1cb39-23c7-452a-833e-e4bf82ac9aee
+        -   Entity:
+                Id: ab9a7712-f5a1-41f3-ab02-0a907782630d
+                Name: SplineGenerator
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: e25353e2-575a-410e-838c-21ce47e8a577
+                        Position: {X: 3.4560707, Y: 0.4461206, Z: 0.39476585}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.1749723, Y: 0.1749723, Z: 0.1749723}
+                        Children: {}
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 54e9aed1-435e-4e8c-ae13-cf07e33e47b3
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
+                    b99cbe71a39c3d6d5c96d539b39b1d7e: !SplineTools.SplinesPerformanceTest,SplineTools
+                        Id: 20b2c1df-0059-484b-94bf-a2f0a31d486c
+                        splineAmount: 100
+                        splineNodesPerSpline: 10
+                        splineSegmentCount: 100
+                        splineGenerationArea: {X: 100.0, Y: 20.0, Z: 100.0}
+                        splineMaterials:
+                            c126297e59325d504d8e64bbbf68d435: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
+                            598c6414fee234562f071b604c753ee2: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Blue
+                            71358599213bda16a58e18ef27c1ee32: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            55fd0e61fc29691dbf15a3e9df5c11b5: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
+        -   Entity:
+                Id: c28e5bfc-0656-4565-80df-29bd91cf5483
+                Name: Ground
+                Components:
+                    55a9aa5abde162ce0ef68f2227e8e025: !TransformComponent
+                        Id: d68084e5-0eec-4977-b912-cce8c9896da3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 20.0, Y: 1.0, Z: 20.0}
+                        Children: {}
+                    3b7dfa1b125c179fd3a6f28da739ba63: !ModelComponent
+                        Id: d530e1d3-afcf-4943-8601-27fe4dee1b81
+                        Model: 136576a0-e08f-4b73-aef1-03df8e422709:Ground
+                        Materials: {}
+                    368602981b598ae21a8ed4e68f48ac5a: !SplineTools.GameProfiler,SplineTools
+                        Id: 845dcb42-98fc-4629-9ed0-933e179f09a1
+                        Enabled: true
+                        TextColor: {R: 144, G: 238, B: 144, A: 255}
+                        RefreshTime: 100.0
+                        SortingMode: ByTime
+                        FilteringMode: Fps
+                        ResultPage: 1

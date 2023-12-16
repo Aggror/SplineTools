@@ -17,10 +17,11 @@ namespace SplineTools
 
         public override void Update()
         {
-            int DrawY = 20;
+            int DrawX = 10;
+            int DrawY= 60;
             for (int i = 0; i < Scenes.Count; i++)
             {
-                DebugText.Print($"Press {i + 1} to load '{Scenes[i]}' ", new Int2(20, DrawY));
+                DebugText.Print($"Press {i + 1} to load '{Scenes[i]}' ", new Int2(DrawX, DrawY));
 
                 if (Input.IsKeyPressed((Keys)i + 35)) //35 = D1, 36 = D2 etc
                 {

@@ -56,7 +56,7 @@ Hierarchy:
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
+                            Shadow: !LightDirectionalShadowMap
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
                                     FilterSize: Filter5x5
@@ -82,6 +82,9 @@ Hierarchy:
                             Segments: 20
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: -1.0, Y: 0.0, Z: -0.5}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 320989d9-37d0-4fff-96ee-abd07f89b91d
                 Name: SplineTraverserNoLoop
@@ -143,6 +146,7 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -164,6 +168,9 @@ Hierarchy:
                             Segments: 20
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 57dc6ecb-4a43-42fe-8985-cf873842c3ec
                 Name: SplineLoop
@@ -210,6 +217,9 @@ Hierarchy:
                             Segments: 10
                             TangentOutLocal: {X: -1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 75c33332-328a-4cdb-bdaf-ce8c5ff0efc0
                 Name: Node1
@@ -226,6 +236,9 @@ Hierarchy:
                             Segments: 20
                             TangentOutLocal: {X: -1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Folder: null
             Entity:
                 Id: 77cd9447-fde5-4b3e-af52-796ecc176633
@@ -243,6 +256,9 @@ Hierarchy:
                             Segments: 10
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: -1.0, Y: 0.0, Z: -1.5}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: bed58f6b-3ad6-4df9-add4-7f19dcb45e96
                 Name: SplineNoLoop
@@ -400,6 +416,9 @@ Hierarchy:
                             Segments: 20
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: 1.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: -1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: e41f2148-8538-4dfc-b8bb-acb26c400894
                 Name: Camera
@@ -540,3 +559,6 @@ Hierarchy:
                             Segments: 10
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: -1.0, Y: 0.0, Z: -1.5}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}

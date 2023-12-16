@@ -29,6 +29,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 6.0, Y: 0.0, Z: -4.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 3e1b4f23-94d4-4d99-acac-bb27a11928cb
                 Name: Directional light
@@ -44,7 +47,7 @@ Hierarchy:
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
+                            Shadow: !LightDirectionalShadowMap
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
                                     FilterSize: Filter5x5
@@ -70,6 +73,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: -4.0, Y: 0.0, Z: -5.0}
                             TangentInLocal: {X: 4.0, Y: 0.0, Z: 2.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 4d8f867b-ac00-4c7a-ac25-1dffa0c38c5a
                 Name: Ground
@@ -119,6 +125,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: -4.0, Y: 0.0, Z: -4.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 8ba9e38e-85b5-445d-b1a7-92cb305241cb
                 Name: Camera
@@ -144,6 +153,7 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
                     045639e1576b95de5f5621cbf2a35e3b: ~(Deleted)
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera

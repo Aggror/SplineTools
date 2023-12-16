@@ -13,6 +13,7 @@ Hierarchy:
         - ref!! a22f3160-3715-47da-b023-75dc50d5f384
         - ref!! ed51baca-7c0a-4f84-bca0-2814f4445d54
         - ref!! 2ebf5bb7-7b35-46b8-bd93-3bea5522d59b
+        - ref!! e58334ae-0abc-47fb-a02c-11846f259bb4
     Parts:
         -   Folder: null
             Entity:
@@ -31,6 +32,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 2.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: -1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 264ee3f0-c80a-4f31-bfba-19383bb77369
                 Name: Ground
@@ -60,7 +64,7 @@ Hierarchy:
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow:
+                            Shadow: !LightDirectionalShadowMap
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
                                     FilterSize: Filter5x5
@@ -114,6 +118,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Folder: null
             Entity:
                 Id: 5fefac3d-f7d9-4e90-94e5-f54573768f80
@@ -131,6 +138,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 2.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: -1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Folder: null
             Entity:
                 Id: 7177579d-0c91-4b94-9264-79206268f910
@@ -148,6 +158,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: -2.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: 8f6023ec-d0d5-4c02-aefb-0ed823fa72a6
                 Name: Camera
@@ -182,6 +195,7 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -228,6 +242,9 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 3.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: e0abbc72-ef7c-4f6c-98cb-76280655e234
                 Name: SphereRed
@@ -260,6 +277,24 @@ Hierarchy:
                             Segments: 40
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 1.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: e58334ae-0abc-47fb-a02c-11846f259bb4
+                Name: Ground
+                Components:
+                    f21eaefb639372e92944a32c23191fca: !TransformComponent
+                        Id: dfd53d45-4b26-4a19-94af-8dec84ff5dee
+                        Position: {X: -4.3895106, Y: 2.5170088, Z: -4.366684}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    058b72efb48d97d55e39bc3c3d0b2aae: !ModelComponent
+                        Id: 6a4c9389-aa2d-46c8-a4fa-dac99555ba67
+                        Model: 136576a0-e08f-4b73-aef1-03df8e422709:Ground
+                        Materials:
+                            10ded19cdfaea02b68dbc332aa951091~0: 0a9b3a90-f02d-41de-9852-b4a62c926292:double
         -   Entity:
                 Id: ed51baca-7c0a-4f84-bca0-2814f4445d54
                 Name: Spline1
