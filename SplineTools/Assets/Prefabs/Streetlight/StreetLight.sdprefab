@@ -1,0 +1,22 @@
+!PrefabAsset
+Id: 459c96ff-90c0-4265-8310-1e568a1c4832
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! af9aa1ab-06e8-42a7-96b7-84162f14e8aa
+    Parts:
+        -   Entity:
+                Id: af9aa1ab-06e8-42a7-96b7-84162f14e8aa
+                Name: StreetLight_holmhansen
+                Components:
+                    7ae58587ded46138c1c0d17e60bfb11a: !TransformComponent
+                        Id: 9d15ae83-672d-4ab1-a723-88223dd1a6d8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: -0.0, Y: -0.70710677, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 0.23430581, Y: 0.23430581, Z: 0.23430581}
+                        Children: {}
+                    62fb3d568af89b53e76cf80a18162d10: !ModelComponent
+                        Id: 98245358-8291-448c-84d5-c9a5fe7e365a
+                        Model: 96693a0a-d44d-4007-a21c-5d57d8cd16b7:Prefabs/Streetlight/StreetLight_holmhansen
+                        Materials: {}
