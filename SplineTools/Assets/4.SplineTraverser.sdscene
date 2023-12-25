@@ -46,7 +46,7 @@ Hierarchy:
                         Children: {}
                     e36e9e8d628e9fd8f981468927d99190: !ModelComponent
                         Id: 6a033b48-a9f1-429a-8e25-7dd137b1f625
-                        Model: 69f5d18d-6719-413b-9bfb-e7034055361b:Plane/plane
+                        Model: 69f5d18d-6719-413b-9bfb-e7034055361b:Prefabs/Plane/plane
                         Materials:
                             596b15e18923547690bd74c948c0b800*~1: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Blue
                             0794fd371c959bcee1db6ba44bec4db3*~2: 47fe2582-86c3-42c8-ab65-978342467add:Red
@@ -54,7 +54,7 @@ Hierarchy:
                             3d753a72e7562a39d0a8513c5ef1e798*~4: 47fe2582-86c3-42c8-ab65-978342467add:Red
                             17f771b1d1f3466cad91b104c33bb88a*~5: 47fe2582-86c3-42c8-ab65-978342467add:Red
             Base:
-                BasePartAsset: 12d04c4b-b724-4c97-807b-92ffe980f03f:Plane/PlanePrefab
+                BasePartAsset: 12d04c4b-b724-4c97-807b-92ffe980f03f:Prefabs/Plane/PlanePrefab
                 BasePartId: 8c50f3e8-e5fe-492b-b049-955acef166b6
                 InstanceId: 80cb3f4a-811d-4348-872b-31b22e0b38e3
         -   Entity:
