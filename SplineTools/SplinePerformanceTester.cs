@@ -14,18 +14,24 @@ namespace SplineTools
         public int splineAmount = 1000;
         public int splineNodesPerSpline = 1000;
         public int splineSegmentCount = 100;
-        public Vector3 splineGenerationArea = new (1000, 200, 1000);
+        public Vector3 splineGenerationArea = new(1000, 200, 1000);
+        public Vector3 TangentOffet = new(2, 2, 2);
+        public bool UseStructuredSpline = false;
+        public float StructureOffset = 20.0f;
+
 
         public List<Material> splineMaterials = new List<Material>();
         private SplineComponent splineComponent;
         private Random random;
-        private Entity[] splineEntities;
+        public Entity[] splineEntities;
+        public SplineComponent[] splineComponents;
 
         private Stopwatch stopwatch;
 
         public override void Start()
         {
             splineEntities = new Entity[splineAmount];
+            splineComponents = new SplineComponent[splineAmount];
             random = new Random((int)Game.TargetElapsedTime.TotalMilliseconds);
             GenerateSplines();
         }
@@ -34,21 +40,29 @@ namespace SplineTools
         {
             stopwatch = new Stopwatch();
             stopwatch.Start();
-            
+
             ClearSplines();
             for (var i = 0; i < splineAmount; i++)
             {
                 GenerateSpline(i);
             }
+
             stopwatch.Stop();
         }
 
         private void GenerateSpline(int iteration)
         {
             var nodePositions = new Vector3[splineNodesPerSpline];
+            var division = splineGenerationArea / splineNodesPerSpline;
             for (var i = 0; i < splineNodesPerSpline; i++)
             {
-                nodePositions[i] = RandomVector3();
+                if (UseStructuredSpline)
+                {
+                    var structuredArea = new Vector3(splineGenerationArea.X, splineGenerationArea.Y, division.Z * i);
+                    nodePositions[i] = structuredArea;
+                }
+                else
+                    nodePositions[i] = RandomVector3(splineGenerationArea);
             }
 
             //In and Out tangent
@@ -57,16 +71,21 @@ namespace SplineTools
             {
                 tangents[i] = RandomOffsetVector3();
             }
-            
+
             var splineEntity = new Entity($"Spline{iteration}");
             splineComponent = new SplineComponent
             {
                 Loop = false
             };
+
             splineEntity.Add(splineComponent);
             Entity.Scene.Entities.Add(splineEntity);
+            splineEntity.Transform.Position = Entity.Transform.WorldMatrix.TranslationVector;
+            splineEntity.Transform.Position.X += iteration * StructureOffset;
+
             splineEntities[iteration] = splineEntity;
-            
+            splineComponents[iteration] = splineComponent;
+
             for (var i = 0; i < nodePositions.Length; i++)
             {
                 var nodeEntity = new Entity("node" + i, nodePositions[i]);
@@ -78,17 +97,21 @@ namespace SplineTools
             }
 
             // We use a spline renderer if we want to view our spline in the game
-            splineComponent.SplineRenderer.SegmentsMaterial = splineMaterials[random.Next(0, splineMaterials.Count)];
+            var materialIndex = iteration % splineMaterials.Count;
+            var material = splineMaterials[materialIndex];
+            splineComponent.SplineRenderer.BoundingBox = true;
+            splineComponent.SplineRenderer.BoundingBoxMaterial = material;
+            splineComponent.SplineRenderer.SegmentsMaterial = material;
             splineComponent.SplineRenderer.Segments = true;
-            splineComponent.SplineRenderer.BoundingBox = false;
         }
 
         public override void Update()
         {
             DebugText.Print($"Press C to clean splines", new Int2(1600, 20));
             DebugText.Print($"Press G to generate {splineAmount} splines ", new Int2(1600, 40));
-            DebugText.Print($"Last generation run took {stopwatch?.ElapsedMilliseconds} milliseconds", new Int2(1600, 80));
-            
+            DebugText.Print($"Press B to toggle bounding box ",
+                new Int2(1600, 80));
+
             //Clean existing splines
             if (Input.IsKeyPressed(Keys.C))
             {
@@ -101,6 +124,20 @@ namespace SplineTools
                 GenerateSplines();
             }
 
+            //Generate new splines
+            if (Input.IsKeyPressed(Keys.B))
+            {
+                ToggleBoundingBox();
+            }
+        }
+
+        private void ToggleBoundingBox()
+        {
+            var bb = splineComponents[0].SplineRenderer.BoundingBox;
+            for (var i = 0; i < splineAmount; i++)
+            {
+                splineComponents[i].SplineRenderer.BoundingBox = !bb;
+            }
         }
 
         private void ClearSplines()
@@ -110,21 +147,31 @@ namespace SplineTools
                 Entity.Scene.Entities.Remove(splineEntities[i]);
             }
         }
-        
-        private Vector3 RandomVector3()
+
+        private Vector3 RandomVector3(Vector3 generationArea)
         {
             return new(
-                Random(-(int)splineGenerationArea.X, (int)splineGenerationArea.X),
-                Random(-(int)splineGenerationArea.Y, (int)splineGenerationArea.Y),
-                Random(-(int)splineGenerationArea.Z, (int)splineGenerationArea.Z));
+                Random(-(int)generationArea.X, (int)generationArea.X),
+                Random(-(int)generationArea.Y, (int)generationArea.Y),
+                Random(-(int)generationArea.Z, (int)generationArea.Z));
         }
 
         private Vector3 RandomOffsetVector3()
         {
-            const int offset = 50;
-            return new Vector3(Random(-offset, offset), Random(-offset, offset), Random(-offset, offset));
+            if (UseStructuredSpline)
+            {
+                return new Vector3(
+                    Random(-(int)TangentOffet.X, (int)TangentOffet.X),
+                    Random(-(int)TangentOffet.Y, (int)TangentOffet.Y),
+                    TangentOffet.Z);
+            }
+
+            return new Vector3(
+                Random(-(int)TangentOffet.X, (int)TangentOffet.X),
+                Random(-(int)TangentOffet.Y, (int)TangentOffet.Y),
+                Random(-(int)TangentOffet.Z, (int)TangentOffet.Z));
         }
-        
+
         private int Random(int min, int max)
         {
             return random.Next(min, max);

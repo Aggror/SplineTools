@@ -71,6 +71,7 @@ Hierarchy:
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
                             0494f0f2d97890d4ebbb7b60a113d1f1*: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.TraverserTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -107,11 +108,16 @@ Hierarchy:
                         splineNodesPerSpline: 10
                         splineSegmentCount: 100
                         splineGenerationArea: {X: 100.0, Y: 20.0, Z: 100.0}
+                        TangentOffet: {X: 50.0, Y: 50.0, Z: 50.0}
+                        UseStructuredSpline: false
+                        StructureOffset: 20.0
                         splineMaterials:
                             c126297e59325d504d8e64bbbf68d435: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
                             598c6414fee234562f071b604c753ee2: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Blue
                             71358599213bda16a58e18ef27c1ee32: 47fe2582-86c3-42c8-ab65-978342467add:Red
                             55fd0e61fc29691dbf15a3e9df5c11b5: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
+                        splineEntities: null
+                        splineComponents: null
         -   Entity:
                 Id: c28e5bfc-0656-4565-80df-29bd91cf5483
                 Name: Ground
