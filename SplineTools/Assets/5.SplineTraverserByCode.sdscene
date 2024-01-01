@@ -128,8 +128,8 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.TraverserTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -198,10 +198,10 @@ Hierarchy:
                             e706a950956bc6e1a6d615287b67553d: ref!! 01828cf1-3af7-418e-adc4-18b02a0c1e04
                             a5268efe20e6e447f9add4fe4bf46082: ref!! 1ba67c7e-5646-42d6-860a-d2df3bd97cea
                             313d2ab5a61a986bd022a63ff99060e1: ref!! b623f765-65ae-4c9f-bc8b-cdd2297c715a
-                        SplineRenderer:
-                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                        RenderSettings:
+                            SegmentsMaterial: null
                             NodesMaterial: null
-                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
-                            Segments: true
-                            Nodes: false
-                            BoundingBox: false
+                            BoundingBoxMaterial: null
+                            ShowSegments: false
+                            ShowNodes: false
+                            ShowBoundingBox: false

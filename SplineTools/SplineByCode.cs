@@ -41,11 +41,13 @@ namespace SplineTools
                 new (Random(-4, 1), Random(-2, 2), Random(0,  3))  //Node 3 - in
             };
 
-            splineComponent = new SplineComponent();
-            splineComponent.Loop = toggleLoop;
+            splineComponent = new SplineComponent
+            {
+                Loop = toggleLoop
+            };
             Entity.Add(splineComponent);
 
-            for (int i = 0; i < nodePositions.Length; i++)
+            for (var i = 0; i < nodePositions.Length; i++)
             {
                 var nodeEntity = new Entity("node"+i,nodePositions[i]);
                 var nodeComponent = new SplineNodeComponent(50, tangents[i * 2], tangents[i * 2 + 1]);
@@ -55,11 +57,11 @@ namespace SplineTools
                 splineComponent.Nodes.Add(nodeComponent);
             }
 
-            // We use a spline renderer if we want to view our spline in the game
-            splineComponent.SplineRenderer.SegmentsMaterial = splineMaterial;
-            splineComponent.SplineRenderer.Segments = true;
-            splineComponent.SplineRenderer.BoundingBoxMaterial = boundingBoxMaterial;
-            splineComponent.SplineRenderer.BoundingBox = toggleBoundingBox;
+            // We use spline render settings if we want to view our spline in the game
+            splineComponent.RenderSettings.ShowSegments = true;
+            splineComponent.RenderSettings.ShowBoundingBox = toggleBoundingBox;
+            splineComponent.RenderSettings.SegmentsMaterial = splineMaterial;
+            splineComponent.RenderSettings.BoundingBoxMaterial = boundingBoxMaterial;
         }
 
         public override void Update()
@@ -81,10 +83,10 @@ namespace SplineTools
                 splineComponent.Loop = toggleLoop = !toggleLoop;
             }
 
-            //Press B to toggle Boundingbox of the spline
+            //Press B to toggle Bounding box of the spline
             if (Input.IsKeyPressed(Keys.B))
             {
-                splineComponent.SplineRenderer.BoundingBox = toggleBoundingBox = !toggleBoundingBox;
+                splineComponent.RenderSettings.ShowBoundingBox = toggleBoundingBox = !toggleBoundingBox;
             }
         }
 

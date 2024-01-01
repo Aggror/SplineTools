@@ -136,8 +136,8 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.TraverserTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -210,13 +210,13 @@ Hierarchy:
                             313d2ab5a61a986bd022a63ff99060e1: ref!! 257042a1-6a91-41c1-9de2-3ddee4ec0698
                             1ed67cd45af48e44de093a13de133b77: ref!! 77af6cc6-387a-47ca-b8ca-512bb5510c15
                             895f2425142d0252560b9cd55be538df: ref!! 92cb2a47-f369-44bd-a176-287b6de72b97
-                        SplineRenderer:
+                        RenderSettings:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
                             NodesMaterial: null
-                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
-                            Segments: true
-                            Nodes: false
-                            BoundingBox: false
+                            BoundingBoxMaterial: null
+                            ShowSegments: true
+                            ShowNodes: false
+                            ShowBoundingBox: false
         -   Entity:
                 Id: a8c46d36-0f29-49a8-b558-b520d362f0f2
                 Name: Node3

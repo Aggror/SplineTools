@@ -94,13 +94,13 @@ Hierarchy:
                             e706a950956bc6e1a6d615287b67553d: ref!! 20aa2014-5bfc-4be5-975c-455bd6b18349
                             a5268efe20e6e447f9add4fe4bf46082: ref!! 2c185327-30b7-4857-adcf-3180deab183c
                             c7c0f1f65a6a71080dbe13705a991928: ref!! b8f20d1d-9533-40f3-866c-8ecd1a1453b5
-                        SplineRenderer:
+                        RenderSettings:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
                             NodesMaterial: null
-                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
-                            Segments: true
-                            Nodes: false
-                            BoundingBox: false
+                            BoundingBoxMaterial: null
+                            ShowSegments: true
+                            ShowNodes: false
+                            ShowBoundingBox: false
         -   Folder: null
             Entity:
                 Id: 49583464-33f4-4c63-8a8e-27fc2531ae22
@@ -148,7 +148,7 @@ Hierarchy:
                 Components:
                     12849867b907b4f072ad6b0a722e7113: !TransformComponent
                         Id: 702666d3-ac1f-4a08-9757-c26a2c4da73c
-                        Position: {X: 1.2435749, Y: 0.0, Z: 1.439886}
+                        Position: {X: 1.3722187, Y: 0.0, Z: 1.2007124}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -156,7 +156,7 @@ Hierarchy:
                         Id: fb67f513-7539-48b9-91c9-d79b634b48b9
                         SplineNode:
                             Segments: 40
-                            TangentOutLocal: {X: -2.0, Y: 0.0, Z: -1.0}
+                            TangentOutLocal: {X: -1.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
                             BoundingBox:
                                 Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -195,8 +195,8 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.Stress-testing
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.TraverserTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -302,7 +302,7 @@ Hierarchy:
                 Components:
                     22d316f19b166a501801ec29d82d5617: !TransformComponent
                         Id: 1c852d44-6e7c-4d8f-a653-9f84014d5610
-                        Position: {X: 15.014237, Y: 3.0098524, Z: -0.34267384}
+                        Position: {X: 15.819904, Y: 3.7656965, Z: -1.3284926}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -316,10 +316,10 @@ Hierarchy:
                             e706a950956bc6e1a6d615287b67553d: ref!! fb67f513-7539-48b9-91c9-d79b634b48b9
                             a5268efe20e6e447f9add4fe4bf46082: ref!! f0c3446e-3d0c-4424-96fb-fd2a3a6a450f
                             c7c0f1f65a6a71080dbe13705a991928: ref!! 8176597e-13b3-4d06-9718-10bd95409059
-                        SplineRenderer:
+                        RenderSettings:
                             SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
-                            NodesMaterial: null
-                            BoundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
-                            Segments: true
-                            Nodes: false
-                            BoundingBox: false
+                            NodesMaterial: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            BoundingBoxMaterial: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Blue
+                            ShowSegments: true
+                            ShowNodes: true
+                            ShowBoundingBox: true

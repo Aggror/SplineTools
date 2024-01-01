@@ -10,21 +10,21 @@ Hierarchy:
         - ref!! 60a59d5c-330e-4dd6-b454-0dd4b8a22685
     Parts:
         -   Entity:
-                Id: 0a5ce822-4db6-486b-9130-c26388654927
-                Name: A
+                Id: 26c09e9d-2472-4c82-9f5c-6eca9b0f90a8
+                Name: B
                 Components:
                     671aa2d9013c8056b7dbe2925b008e30: !TransformComponent
-                        Id: 3e76c9bf-a450-47b3-90d8-7e7c8214e3d3
-                        Position: {X: -1.3287814, Y: 0.0, Z: -1.2631544}
+                        Id: 5e752f33-0c93-4cbe-adc1-deebba2a5b16
+                        Position: {X: 3.8229702, Y: 0.0, Z: -1.8220379}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     87a82c577ab10d59ea553ed11403ebb8: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
-                        Id: 8174c30f-642f-49ba-a51c-66798058f4bd
+                        Id: ffe7c5d9-1eb8-40a4-b51b-dd71f81bf8c9
                         SplineNode:
-                            Segments: 10
-                            TangentOutLocal: {X: 1.0, Y: 0.0, Z: -1.0}
-                            TangentInLocal: {X: 1.0, Y: 0.0, Z: 1.0}
+                            Segments: 20
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: -2.0}
+                            TangentInLocal: {X: -1.0, Y: 0.0, Z: -1.0}
                             BoundingBox:
                                 Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
                                 Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
@@ -34,25 +34,25 @@ Hierarchy:
                 Components:
                     996ef7dfb8a2ec6d58b2865937e9598f: !TransformComponent
                         Id: 527c294a-d5c2-4b85-974c-ccc0c28e8515
-                        Position: {X: 0.00014524907, Y: 0.08894592, Z: -0.004554417}
+                        Position: {X: 0.9251746, Y: 0.08894592, Z: -0.19039153}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
-                            eea66adc006b581628906fad9d20f8b3: ref!! 3e76c9bf-a450-47b3-90d8-7e7c8214e3d3
                             a079d17f2f95c4c5ed5bcec8315cb410: ref!! 0dee7dab-8fcc-47b0-9822-50b6d967cd16
+                            3a90d6bde988c11d17e140689fcae17e: ref!! 5e752f33-0c93-4cbe-adc1-deebba2a5b16
                     7ce54656b80ed68bbe8fba48489f0093: !SplineComponent
                         Id: 6e11743b-4053-4c50-b24b-9fdcb1fd9de6
                         Loop: true
                         Nodes:
-                            38e3a34ee39d2fbc75bb1dcb0f3e7d94: ref!! 8174c30f-642f-49ba-a51c-66798058f4bd
-                            562da80528c13a15ac7d1cd53dcbe95c: ref!! bae16b22-ee7b-44c9-b994-c1b8a5121372
-                        SplineRenderer:
-                            SegmentsMaterial: 47fe2582-86c3-42c8-ab65-978342467add:Red
-                            NodesMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
+                            38e3a34ee39d2fbc75bb1dcb0f3e7d94: ref!! bae16b22-ee7b-44c9-b994-c1b8a5121372
+                            562da80528c13a15ac7d1cd53dcbe95c: ref!! ffe7c5d9-1eb8-40a4-b51b-dd71f81bf8c9
+                        RenderSettings:
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
+                            NodesMaterial: 47fe2582-86c3-42c8-ab65-978342467add:Red
                             BoundingBoxMaterial: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
-                            Segments: true
-                            Nodes: true
-                            BoundingBox: true
+                            ShowSegments: true
+                            ShowNodes: true
+                            ShowBoundingBox: true
         -   Entity:
                 Id: 769feb0c-6126-4427-a1bd-653670e0ad57
                 Name: Directional light
@@ -76,19 +76,19 @@ Hierarchy:
                                 BiasParameters: {}
         -   Entity:
                 Id: 9eab36c1-8f36-49ed-a65a-687bc961fac2
-                Name: B
+                Name: A
                 Components:
                     671aa2d9013c8056b7dbe2925b008e30: !TransformComponent
                         Id: 0dee7dab-8fcc-47b0-9822-50b6d967cd16
-                        Position: {X: 4.4542828, Y: 0.0, Z: -1.4292253}
+                        Position: {X: 4.3863945, Y: 0.0, Z: -4.2509885}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     87a82c577ab10d59ea553ed11403ebb8: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: bae16b22-ee7b-44c9-b994-c1b8a5121372
                         SplineNode:
-                            Segments: 1
-                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 1.0}
+                            Segments: 20
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 5.0}
                             TangentInLocal: {X: -1.0, Y: 0.0, Z: -1.0}
                             BoundingBox:
                                 Minimum: {X: 0.0, Y: 0.0, Z: 0.0}

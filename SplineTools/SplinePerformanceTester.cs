@@ -99,10 +99,10 @@ namespace SplineTools
             // We use a spline renderer if we want to view our spline in the game
             var materialIndex = iteration % splineMaterials.Count;
             var material = splineMaterials[materialIndex];
-            splineComponent.SplineRenderer.BoundingBox = true;
-            splineComponent.SplineRenderer.BoundingBoxMaterial = material;
-            splineComponent.SplineRenderer.SegmentsMaterial = material;
-            splineComponent.SplineRenderer.Segments = true;
+            splineComponent.RenderSettings.ShowBoundingBox = true;
+            splineComponent.RenderSettings.ShowSegments = true;
+            splineComponent.RenderSettings.BoundingBoxMaterial = material;
+            splineComponent.RenderSettings.SegmentsMaterial = material;
         }
 
         public override void Update()
@@ -133,10 +133,10 @@ namespace SplineTools
 
         private void ToggleBoundingBox()
         {
-            var bb = splineComponents[0].SplineRenderer.BoundingBox;
+            var bb = splineComponents[0].RenderSettings.ShowBoundingBox;
             for (var i = 0; i < splineAmount; i++)
             {
-                splineComponents[i].SplineRenderer.BoundingBox = !bb;
+                splineComponents[i].RenderSettings.ShowBoundingBox = !bb;
             }
         }
 
