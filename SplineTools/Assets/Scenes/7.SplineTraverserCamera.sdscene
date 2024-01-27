@@ -64,7 +64,7 @@ Hierarchy:
                         Id: 2c2f026f-1b61-4c1f-b749-d3f4f1ab4d05
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: 0adaa689-3ad5-46d4-88af-24181d48e4e7
@@ -219,7 +219,7 @@ Hierarchy:
                         Id: 5517fa49-558f-46df-9ddf-1be169c5d227
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Entity:
                 Id: 25021088-630b-41e9-b1a9-3f9cd8586cd1
                 Name: Camera
@@ -238,15 +238,15 @@ Hierarchy:
                     98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
                         Id: 1a30fc8a-7f1b-4d7d-b886-3554849198c3
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
-                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
                     75803d53350d25f4e32b7961de560093*: !SplineTools.BasicCameraController,SplineTools
                         Id: b6a1defa-0227-464e-afd4-39a7d1acba87
                         Gamepad: false
@@ -333,7 +333,7 @@ Hierarchy:
                         Id: 9dc5f37d-2884-4cc5-8962-34b27018460d
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: 31542be2-3bb3-4de7-963f-86f5f34027e7
@@ -474,7 +474,7 @@ Hierarchy:
                         Id: fb0c7a11-49b5-4197-9124-138e064d99ec
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: 4e14a0b5-d2da-4da0-b4a9-a6950854d460
@@ -624,7 +624,7 @@ Hierarchy:
                         Id: da99f762-d436-434e-8e67-7080c1438ad3
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Entity:
                 Id: 6cd721d6-2f69-4d97-bd00-708193cbf00e
                 Name: largeTower
@@ -667,7 +667,7 @@ Hierarchy:
                         Id: 11270a02-26af-425a-ae44-69652173350b
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: 7057b73a-4f1d-48a6-b841-d62f272c30a6
@@ -868,12 +868,12 @@ Hierarchy:
                             885308ac3297d33c2f76f83b3b1e3d3c: ref!! eb4fdf84-63fd-4ae2-9dc1-c19d9bcc7557
                             22f9aaa6b9f712a8a40b86b2bb90aded: ref!! d91dfd6b-1e99-4ef7-97b3-7271ac6ddd03
                         RenderSettings:
-                            SegmentsMaterial: null
-                            NodesMaterial: null
-                            BoundingBoxMaterial: null
-                            ShowSegments: false
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
                             ShowNodes: false
+                            NodesMaterial: null
                             ShowBoundingBox: false
+                            BoundingBoxMaterial: null
         -   Folder: null
             Entity:
                 Id: 9e8c571f-8b29-451c-832e-88b58d6c9210
@@ -889,7 +889,7 @@ Hierarchy:
                         Id: 8ed006bf-b2d3-46f1-9cc6-c1aa288897b2
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: a3ff4aa1-dee7-4162-b9fc-a26b64565263
@@ -920,7 +920,7 @@ Hierarchy:
                         Id: ec12d5f6-87d9-4050-a546-c1969203838c
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: a7ba21a1-b4f4-44db-8ed2-4f932162d075
@@ -1082,7 +1082,7 @@ Hierarchy:
                         Id: 23006a38-ae48-4c0e-9601-0c3fbef9740f
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Entity:
                 Id: bfe05de2-386b-4e29-9538-9054e43432e3
                 Name: Cube
@@ -1127,7 +1127,7 @@ Hierarchy:
                         Id: a591d8df-d891-4a48-a591-72d7587da281
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: c6aee00e-8e14-454c-8f4c-93677e20ef2d
@@ -1320,7 +1320,7 @@ Hierarchy:
                         Id: 29f3e238-49f0-4078-a3dc-ba1c87a7e201
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Entity:
                 Id: d5183aad-83ad-4a6d-b24f-a651fa3bcb15
                 Name: plane
@@ -1399,7 +1399,7 @@ Hierarchy:
                         Id: edf1b981-7098-4d6f-8b43-e876ff66d9a3
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Red
+                            7bb3c15ca6261e6bf941fd1aa8cf62aa~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
         -   Folder: null
             Entity:
                 Id: f02b7287-9f6f-41c2-805f-7ce22c1bee90

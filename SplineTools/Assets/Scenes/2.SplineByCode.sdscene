@@ -52,15 +52,15 @@ Hierarchy:
                     98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
                         Id: 014ee48d-98b0-4020-8456-3530113609a5
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
-                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -117,5 +117,5 @@ Hierarchy:
                         Materials: {}
                     17e90393d7926458028591e653f0c2b4: !SplineTools.SplineByCode,SplineTools
                         Id: 42719ba8-bb39-4ae6-a301-df7f559233af
-                        splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
-                        boundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
+                        splineMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                        boundingBoxMaterial: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow

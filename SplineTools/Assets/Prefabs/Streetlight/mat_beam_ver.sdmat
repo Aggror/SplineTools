@@ -21,11 +21,13 @@ Attributes:
             Swizzle: null
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Specular: !MaterialSpecularMapFeature
+        Enabled: false
         SpecularMap: !ComputeColor
             Value: {R: 0.8, G: 0.8, B: 0.8, A: 1.0}
         Intensity: !ComputeFloat
             Value: 1.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Enabled: false
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
         Visibility: !MaterialSpecularMicrofacetVisibilityImplicit {}
         NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionBlinnPhong {}

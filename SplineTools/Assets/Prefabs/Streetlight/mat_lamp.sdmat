@@ -26,6 +26,7 @@ Attributes:
         Intensity: !ComputeFloat
             Value: 1.0
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Enabled: false
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
         Visibility: !MaterialSpecularMicrofacetVisibilityImplicit {}
         NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionBlinnPhong {}

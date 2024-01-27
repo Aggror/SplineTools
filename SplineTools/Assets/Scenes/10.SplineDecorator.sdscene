@@ -27,7 +27,7 @@ Hierarchy:
                         Id: af383a37-f011-466d-b2c2-41e2e71aabf0
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
                         Materials:
-                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
                     3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
                         Id: ee32cbfa-3b54-41ab-8f76-19b2b57979df
                         Loop: false
@@ -35,12 +35,12 @@ Hierarchy:
                             54cbfa1340e6f38ad6da503637b91992: ref!! e5c3a31b-630f-4fc7-92e1-818c137dedbf
                             5b55ddc46022e91afb500a2912d30a1c: ref!! 6038895e-9d39-471e-baac-6ff2db140b94
                         RenderSettings:
-                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:LightBlue
-                            NodesMaterial: null
-                            BoundingBoxMaterial: null
                             ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
                             ShowNodes: false
+                            NodesMaterial: null
                             ShowBoundingBox: false
+                            BoundingBoxMaterial: null
         -   Entity:
                 Id: 745e9268-c019-4f20-a1fd-72aee1da238a
                 Name: Camera
@@ -77,7 +77,7 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 1451cd4b-ea91-441a-97be-143ceddccafb
-                        Position: {X: 6.519552, Y: 10.618824, Z: -4.101574}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -98,15 +98,15 @@ Hierarchy:
                     98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
                         Id: 8e1b9ff9-4cc4-48ac-9918-ba8bdf17223f
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
-                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494

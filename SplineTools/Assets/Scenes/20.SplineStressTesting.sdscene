@@ -42,7 +42,7 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: b9d1cb39-23c7-452a-833e-e4bf82ac9aee
-                        Position: {X: 6.519552, Y: 10.618824, Z: -4.101574}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -63,15 +63,15 @@ Hierarchy:
                     98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
                         Id: e42a723b-c293-4096-9e99-862d2ad04059
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:1.MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:2.SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:3.SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:4.SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:5.SplineTraverserByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:6.SplineTraverserEvents
-                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1*: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:8.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:9.SplineTraverserStressTest
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1*: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
@@ -101,7 +101,7 @@ Hierarchy:
                         Id: 54e9aed1-435e-4e8c-ae13-cf07e33e47b3
                         Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
                         Materials:
-                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
                     b99cbe71a39c3d6d5c96d539b39b1d7e: !SplineTools.SplinesPerformanceTest,SplineTools
                         Id: 20b2c1df-0059-484b-94bf-a2f0a31d486c
                         splineAmount: 100
@@ -112,10 +112,10 @@ Hierarchy:
                         UseStructuredSpline: false
                         StructureOffset: 20.0
                         splineMaterials:
-                            c126297e59325d504d8e64bbbf68d435: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Green
-                            598c6414fee234562f071b604c753ee2: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Blue
-                            71358599213bda16a58e18ef27c1ee32: 47fe2582-86c3-42c8-ab65-978342467add:Red
-                            55fd0e61fc29691dbf15a3e9df5c11b5: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Yellow
+                            c126297e59325d504d8e64bbbf68d435: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                            598c6414fee234562f071b604c753ee2: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
+                            71358599213bda16a58e18ef27c1ee32: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
+                            55fd0e61fc29691dbf15a3e9df5c11b5: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
                         splineEntities: null
                         splineComponents: null
         -   Entity:
