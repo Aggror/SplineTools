@@ -15,8 +15,12 @@ namespace SplineTools
         public override void Start()
         {
             traverserComponent = Entity.Get<SplineTraverserComponent>();
-            traverserComponent.SplineTraverser.OnSplineEndReached += SplineTraverser_OnSplineEndReached;
-            traverserComponent.SplineTraverser.OnSplineNodeReached += SplineTraverser_OnSplineNodeReached;
+
+            if (traverserComponent != null)
+            {
+                traverserComponent.SplineTraverser.OnSplineEndReached += SplineTraverser_OnSplineEndReached;
+                traverserComponent.SplineTraverser.OnSplineNodeReached += SplineTraverser_OnSplineNodeReached;
+            }
         }
 
         private void SplineTraverser_OnSplineEndReached(SplineNode splineNode)
