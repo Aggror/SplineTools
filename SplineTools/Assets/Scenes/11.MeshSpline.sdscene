@@ -1,0 +1,606 @@
+!SceneAsset
+Id: 918da35a-d179-4288-a9aa-e7c801e9759f
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 3a8da8ee-5413-4804-bd14-a33a9ce75a2f
+        - ref!! e436febe-4c37-4096-95ba-b8fa067cd95b
+        - ref!! 441fa21b-74a0-43d2-b0d2-d68edc2a4f2d
+        - ref!! 012ee796-7bcf-43eb-805d-6182cdce8f17
+        - ref!! cdce7073-b5eb-4a4c-b660-fda1de108c23
+        - ref!! dc1d4c92-1327-47c1-93a4-0de1590c88fa
+        - ref!! 12139075-6b32-4a96-8f64-c86e4e669b79
+        - ref!! d9e17211-c72c-4cd3-a7aa-11203f81701f
+        - ref!! c798390b-a691-4f05-ab4a-19250dd788f6
+    Parts:
+        -   Entity:
+                Id: 012ee796-7bcf-43eb-805d-6182cdce8f17
+                Name: RoadSpline
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: 4fa68123-22d0-46f1-80fe-de4d4755ad9e
+                        Position: {X: 0.15032268, Y: 0.0, Z: 0.093758196}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! 09fdab0d-283e-415f-a1a3-6076be5b9bfd
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! 1503c8b4-f635-4bbd-95ff-4e90b48615dd
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 50f84999-9c60-41b7-a615-8e063c537041
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: fc27d216-e3e4-4d1e-857a-a7aed84096bc
+                        Loop: false
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! cf5a75de-f38d-4220-b30f-b00c10021581
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! 08266c7e-48dd-430d-8275-6839443aa1c0
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: b5c44060-3bd2-4813-9704-b982dce46663
+                        SplineMesh: !SplineMeshPlane
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: 72665805-228b-445a-9c78-1453c4655823:Materials/RoadMaterial
+                            Rotation: 0.0
+                        SplineComponent: ref!! fc27d216-e3e4-4d1e-857a-a7aed84096bc
+        -   Entity:
+                Id: 12139075-6b32-4a96-8f64-c86e4e669b79
+                Name: BoxSpline-looped
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: c6572cb0-6c98-4588-99bf-1c5773ac58de
+                        Position: {X: -20.000292, Y: 2.278644, Z: 19.804495}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! f93dd235-e94f-4eb2-8015-9847734418ad
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! df761b28-bce2-4aa4-9a5c-3ff882c39fb4
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: c9bb8107-1796-450d-9fcf-af7db8eb86cb
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: 46544d12-0aee-4e4a-a89f-81f419496a92
+                        Loop: true
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! 374bc699-fb6f-4a30-872f-b2f80e995091
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! d7c6a0ef-df42-4415-861a-c9f8645f274b
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: 2a9ba767-4f47-4350-86c5-39aa3e6143eb
+                        SplineMesh: !SplineMeshBox
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: a1daa7bb-a33f-4c1d-a204-3ef5f36157e1:Materials/RedBrickMaterial
+                            Rotation: 0.0
+                            CloseEnd: false
+                        SplineComponent: ref!! 46544d12-0aee-4e4a-a89f-81f419496a92
+        -   Folder: null
+            Entity:
+                Id: 1c09b7c0-2b0d-4f7d-a25a-be20c2aa2587
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: df761b28-bce2-4aa4-9a5c-3ff882c39fb4
+                        Position: {X: -1.4368844, Y: 0.0, Z: 11.265936}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: d7c6a0ef-df42-4415-861a-c9f8645f274b
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: 2901e473-49ee-43bc-8767-e4f66410b8bb
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: f93dd235-e94f-4eb2-8015-9847734418ad
+                        Position: {X: 0.55946493, Y: 0.0, Z: 2.9149172}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 374bc699-fb6f-4a30-872f-b2f80e995091
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: 3a8da8ee-5413-4804-bd14-a33a9ce75a2f
+                Name: Camera
+                Components:
+                    841ecd05e53d3b5aa0e68cfb8ccadcae: !TransformComponent
+                        Id: bda66d43-fd11-4d2a-82e5-8a3cb0c9d8fc
+                        Position: {X: -2.7823563, Y: -7.979999, Z: 1.9273406}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            f81f7590486f34d226a8cf37bee2d260: ref!! f4c3e31d-dfe4-45b9-8d0c-e406b1e6a8e7
+        -   Entity:
+                Id: 441fa21b-74a0-43d2-b0d2-d68edc2a4f2d
+                Name: Ground
+                Components:
+                    55a9aa5abde162ce0ef68f2227e8e025: !TransformComponent
+                        Id: ed4b3dc6-d171-41d8-8e74-bea707494654
+                        Position: {X: 0.0, Y: -0.51822805, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 20.0, Y: 1.0, Z: 20.0}
+                        Children: {}
+                    3b7dfa1b125c179fd3a6f28da739ba63: !ModelComponent
+                        Id: ba878bf3-0fc5-402a-8293-31d12a67d90f
+                        Model: 136576a0-e08f-4b73-aef1-03df8e422709:Ground
+                        Materials: {}
+                    368602981b598ae21a8ed4e68f48ac5a: !SplineTools.GameProfiler,SplineTools
+                        Id: 5c899ce8-e073-40b0-8776-ca2e520bdae1
+                        Enabled: true
+                        TextColor: {R: 0, G: 0, B: 0, A: 255}
+                        RefreshTime: 100.0
+                        SortingMode: ByTime
+                        FilteringMode: Fps
+                        ResultPage: 1
+        -   Folder: null
+            Entity:
+                Id: 517fbf00-302b-409f-9f12-3633d357010e
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: 07fade0c-042c-4d1f-a592-245f414882ec
+                        Position: {X: 2.5980828, Y: 0.044731244, Z: 1.0635667}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 056f24b5-1ef9-4166-b5d3-88e297feca8e
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 0.0, Y: 0.0, Z: -10.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: 54e36592-5db3-461d-8f75-64f3c162c58a
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: b5efba2c-b3b5-4b30-b500-ac72dd0fe763
+                        Position: {X: -7.5213814, Y: 0.0, Z: 13.336444}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: a499b524-759f-4e65-a17e-0fb452429fa8
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 10.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: 688a7721-990b-469c-b3ba-caebfd91abcf
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: 031f82e2-2b5a-432c-9c8b-45874b5e7ad0
+                        Position: {X: 0.55946493, Y: 0.0, Z: 2.9149172}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 7f357889-8100-42da-97ab-5573b5e42e08
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: 8b7ff223-7be7-49ee-aa26-86236aabd72b
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: 7a14bf57-6320-4de4-a7b3-c08e8d39679e
+                        Position: {X: -1.4368844, Y: 0.0, Z: 11.265936}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 92fa7f16-0962-4577-8c09-9ae3381c074f
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: 9205d88f-d097-452f-8fb6-32e5cf12c82d
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: 79a22d20-b05d-4a33-a25d-334e450b3f07
+                        Position: {X: -1.4368844, Y: 0.0, Z: 11.265936}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 6d82ac62-1b9b-4fbe-b6b7-25ebc50edb87
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: a3186170-0839-4471-b74d-67a8a5d7333a
+                Name: Camera
+                Components:
+                    f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
+                        Id: f4c3e31d-dfe4-45b9-8d0c-e406b1e6a8e7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
+                        Id: 6210bb04-e039-4d8d-bc3f-ae23b3b45734
+                        Name: null
+                        Projection: Perspective
+                        Slot: 74df2f5f-7b3c-4819-8415-58dfc3199aea
+                    045639e1576b95de5f5621cbf2a35e3b: !SplineTools.BasicCameraController,SplineTools
+                        Id: a720e413-4c40-499c-b91f-7527e933ebfe
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                    98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
+                        Id: 6132ce17-8237-4480-b3bb-a23789a88e4d
+                        Scenes:
+                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
+                            bacb4414a0c615bcb9eac5a66392355e: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
+            Base:
+                BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
+                BasePartId: 08472225-3859-4500-adbc-a22796f88494
+                InstanceId: cd26af92-4a81-4da8-8c67-03211ab646cf
+        -   Entity:
+                Id: c798390b-a691-4f05-ab4a-19250dd788f6
+                Name: CylinderSpline-looped
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: 6dd2eeab-f037-4c98-b9b3-bcb2f072a6e9
+                        Position: {X: -19.907063, Y: 1.3495191, Z: 39.30791}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! 951f9a32-95c9-42a2-a9d5-7fc4629da929
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! 79a22d20-b05d-4a33-a25d-334e450b3f07
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: b8a92064-5459-4b39-92c6-888e4e9fb7a2
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: dbf4665b-fd2c-46bb-a980-89e11de95386
+                        Loop: true
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! 8bd83129-0e7e-4a59-82d8-34ed7576194f
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! 6d82ac62-1b9b-4fbe-b6b7-25ebc50edb87
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: 18d79886-fd10-4ef5-91d8-d579b7d9fb1a
+                        SplineMesh: !SplineMeshCylinder
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: a1daa7bb-a33f-4c1d-a204-3ef5f36157e1:Materials/RedBrickMaterial
+                            Rotation: 0.0
+                            CloseEnd: false
+                            Sides: 32
+                        SplineComponent: ref!! dbf4665b-fd2c-46bb-a980-89e11de95386
+        -   Entity:
+                Id: cdce7073-b5eb-4a4c-b660-fda1de108c23
+                Name: RoadSpline-looped
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: e68d98ae-64d5-4f56-9816-d3c2ca0213ef
+                        Position: {X: -19.839535, Y: -0.2814529, Z: -0.281353}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! 031f82e2-2b5a-432c-9c8b-45874b5e7ad0
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! 7a14bf57-6320-4de4-a7b3-c08e8d39679e
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 5397e611-7fc7-4c34-9e0b-3dbe7874cc98
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: 7abc11c1-5b96-497d-9302-26a370504f22
+                        Loop: true
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! 7f357889-8100-42da-97ab-5573b5e42e08
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! 92fa7f16-0962-4577-8c09-9ae3381c074f
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: af209539-abd1-4895-8157-719155a3ee30
+                        SplineMesh: !SplineMeshPlane
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: 72665805-228b-445a-9c78-1453c4655823:Materials/RoadMaterial
+                            Rotation: 0.0
+                        SplineComponent: ref!! 7abc11c1-5b96-497d-9302-26a370504f22
+        -   Entity:
+                Id: d4eba7dd-eb89-42d3-b2ee-597226e01000
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: 09fdab0d-283e-415f-a1a3-6076be5b9bfd
+                        Position: {X: -0.067720175, Y: 0.0, Z: 0.47736168}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: cf5a75de-f38d-4220-b30f-b00c10021581
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 0.0, Y: 0.0, Z: -10.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Folder: null
+            Entity:
+                Id: d6d51fd2-6304-4f7c-9d10-3bbc3a1abda2
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: faf7c789-7a6f-497b-86ec-a1e0efd49833
+                        Position: {X: 0.28495574, Y: 0.0, Z: 0.24278355}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: dac79c59-c679-4373-ba38-82d557a641d4
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 0.0, Y: 0.0, Z: -10.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: d9e17211-c72c-4cd3-a7aa-11203f81701f
+                Name: CyllinderSpline
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: d62736ad-045d-404c-ae64-41b99a2589c0
+                        Position: {X: -0.22073579, Y: 4.1034822, Z: 40.766655}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! 07fade0c-042c-4d1f-a592-245f414882ec
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! b5efba2c-b3b5-4b30-b500-ac72dd0fe763
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 06ab7d1c-75e4-4d6a-8a3b-2ec9ef3e0c8c
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: c51e412c-10e3-4701-8ec3-c6e3c8346363
+                        Loop: false
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! 056f24b5-1ef9-4166-b5d3-88e297feca8e
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! a499b524-759f-4e65-a17e-0fb452429fa8
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: f897ddcf-270c-4ea2-a3f4-ea34572564b5
+                        SplineMesh: !SplineMeshCylinder
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: a1daa7bb-a33f-4c1d-a204-3ef5f36157e1:Materials/RedBrickMaterial
+                            Rotation: 0.0
+                            CloseEnd: false
+                            Sides: 32
+                        SplineComponent: ref!! c51e412c-10e3-4701-8ec3-c6e3c8346363
+        -   Folder: null
+            Entity:
+                Id: da556959-4276-4ab0-98bc-94f07395e84e
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: d54bba2c-5e65-4524-b6c3-f043cf37049b
+                        Position: {X: -7.5213814, Y: 0.0, Z: 13.336444}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 77f5dbfd-d812-492e-8c70-e64f305e7395
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 10.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: dc1d4c92-1327-47c1-93a4-0de1590c88fa
+                Name: BoxSpline
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: b8083077-e364-43c2-bf1c-4279678afeec
+                        Position: {X: -0.7785454, Y: 2.278644, Z: 20.230593}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! faf7c789-7a6f-497b-86ec-a1e0efd49833
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! d54bba2c-5e65-4524-b6c3-f043cf37049b
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 0f64e383-11e5-450b-8cb7-df90644d3b89
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: a37844b3-478f-4744-875f-197a94e04a82
+                        Loop: false
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! dac79c59-c679-4373-ba38-82d557a641d4
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! 77f5dbfd-d812-492e-8c70-e64f305e7395
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
+                    8c117e8a57d8e67a131b508617b3e340: !SplineMeshComponent
+                        Id: 31701bb4-d3d5-4211-9fed-644aa98ec774
+                        SplineMesh: !SplineMeshBox
+                            Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                            UvScale: {X: 1.0, Y: 1.0}
+                            LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                            NumberOfTextureCoordinates: 10
+                            MaterialInstance:
+                                Material: 4c76c97e-b37b-42f7-8e14-ba08ab0fbf88:Materials/FuturaMaterial
+                            Rotation: 0.0
+                            CloseEnd: false
+                        SplineComponent: ref!! a37844b3-478f-4744-875f-197a94e04a82
+        -   Folder: null
+            Entity:
+                Id: e137c18f-71cc-401a-bf4a-6fee6f42904b
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: 951f9a32-95c9-42a2-a9d5-7fc4629da929
+                        Position: {X: 0.55946493, Y: 0.0, Z: 2.9149172}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 8bd83129-0e7e-4a59-82d8-34ed7576194f
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
+        -   Entity:
+                Id: e436febe-4c37-4096-95ba-b8fa067cd95b
+                Name: Directional light
+                Components:
+                    2735ba6df4c5b50f232760f354230d8c: !TransformComponent
+                        Id: 0bc0a2bf-5c23-4945-a834-53d154e79b12
+                        Position: {X: -22.047579, Y: -1.5983908, Z: -17.825735}
+                        Rotation: {X: -0.08102894, Y: -0.9173682, Z: -0.24580808, W: -0.3024042}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d2d1d0606bd5517b9bb780f5c7356a67: !LightComponent
+                        Id: 47581392-0ec9-4c6a-af4b-e5457d679e30
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+        -   Entity:
+                Id: f9c50409-122a-4b44-ba31-f79b11433b69
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: 1503c8b4-f635-4bbd-95ff-4e90b48615dd
+                        Position: {X: -7.8740573, Y: 0.0, Z: 13.571022}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 08266c7e-48dd-430d-8275-6839443aa1c0
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 10.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
