@@ -109,8 +109,13 @@ Hierarchy:
                         Name: null
                         Projection: Perspective
                         Slot: 74df2f5f-7b3c-4819-8415-58dfc3199aea
-                    045639e1576b95de5f5621cbf2a35e3b: !SplineTools.BasicCameraController,SplineTools
-                        Id: 0a22dfeb-b008-4af9-bb8a-1b8df12f8230
+                    13c784dc3527224fd0f7dc445499473d: !UIComponent
+                        Id: 574a2fd2-2580-494b-b92a-7f5af5347eab
+                        Page: 72db55a9-0b76-4c3c-918b-afaf40334293:UI/MainPage
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    ee0c014ab223f17f3503cd630f77f399: !SplineTools.BasicCameraController,SplineTools
+                        Id: ac729612-0b72-4003-9621-a1ac680f69fb
                         Gamepad: false
                         KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
                         TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
@@ -118,19 +123,22 @@ Hierarchy:
                         KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
                         MouseRotationSpeed: {X: 1.0, Y: 1.0}
                         TouchRotationSpeed: {X: 1.0, Y: 0.7}
-                    98922d3c578459171052081406e58abc: !SplineTools.SwitchScene,SplineTools
-                        Id: a80358e6-9330-4cd4-a235-4dc74d91c348
+                    ad128bc66dad332dd16c8d312ee050b3: !SplineTools.SwitchScene,SplineTools
+                        Id: 39eafb55-6ab1-4a80-9015-6576c93e3e51
                         Scenes:
-                            b30a93cd30367586218f7ad21f16febf: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
-                            b26262937d38596b1cd3b4dabad3a948: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
-                            ea1f459b886057966cb5e1c184d95da4: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
-                            4009272cbe5bcdd56e3f705eb8c7216e: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
-                            7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
-                            10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
-                            7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: c7a8213a-8590-4f69-9f8f-e02eddf3fa3e:Scenes/8.SplineTraverserPhysics
-                            0aaaeff513a73148a4386ce91381dad7: 696f374e-bae1-4de7-8e06-22117b5608de:Scenes/10.SplineDecorator
-                            bacb4414a0c615bcb9eac5a66392355e: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
+                            c5800989324242552c79a79c023b21d9: 25542675-edbb-436c-97aa-ee45d9f5b004:Scenes/1.MainScene
+                            2ffe2ccfd77f2a4211bf1184c609a16a: 13836056-32b5-43b5-8f33-a772afc5291a:Scenes/2.SplineByCode
+                            a5e99e94542079249676bcf9b9fe73c5: d6c6e743-2d04-4ceb-a66f-6e43ed9241fd:Scenes/3.SplineClosestPoint
+                            fe573d561e8d3e880c6a2834f7460a01: f2a651a3-c947-4709-b97c-65e0ac1dd399:Scenes/4.SplineTraverser
+                            76050d92d9a15b40836baffc47ddfc88: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
+                            83aea174e763f98a391df33dfd5a62a0: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
+                            4b4c7429b3ea228c536b09a186c581c5: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
+                            6fa47271b4eb9256ec224a173d2ca141: c7a8213a-8590-4f69-9f8f-e02eddf3fa3e:Scenes/8.SplineTraverserPhysics
+                            850aeaf2ee01f638d76bd9063f627d68: 696f374e-bae1-4de7-8e06-22117b5608de:Scenes/10.SplineDecorator
+                            ee123767688342befe4c0083dcb5439a: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
+                            a68c3accc4557497e0b88b83dbafc98a: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
+                            92751329c3a3b1c8b741d77c2930a99b: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
+                        ShowMenu: true
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
