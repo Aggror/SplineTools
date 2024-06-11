@@ -13,11 +13,11 @@ Hierarchy:
     Parts:
         -   Entity:
                 Id: 458ab9f1-b892-4dfc-94e3-20a2eb5fb87c
-                Name: Spline
+                Name: SplineDecorator-Amount
                 Components:
                     3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
                         Id: 678f6cc5-e736-4a0f-a1df-683865104400
-                        Position: {X: 9.312072, Y: 0.0, Z: 8.324884}
+                        Position: {X: 9.498013, Y: 0.0, Z: 3.3552155}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -44,10 +44,11 @@ Hierarchy:
                     bcbe28c342ab70714b157c4e8e6b3639: !SplineDecoratorComponent
                         Id: 6a44e412-ffd3-43b0-b8a5-8b02884b597c
                         DecoratorSettings: !SplineAmountDecorator
-                            Decorations: {}
+                            Decorations:
+                                16467cd1f0561e7ed1e0278abcf1cd93: 459c96ff-90c0-4265-8310-1e568a1c4832:Prefabs/Streetlight/StreetLight
                             SpawnOrder: Random
-                            Amount: 3
-                        SplineComponent: null
+                            Amount: 4
+                        SplineComponent: ref!! ee32cbfa-3b54-41ab-8f76-19b2b57979df
         -   Entity:
                 Id: 745e9268-c019-4f20-a1fd-72aee1da238a
                 Name: Camera
@@ -146,7 +147,7 @@ Hierarchy:
                         Id: aed3d932-5d73-4c6c-84e2-675abe2352f6
                         Position: {X: 0.0, Y: -0.51822805, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 20.0, Y: 1.0, Z: 20.0}
+                        Scale: {X: 10.0, Y: 1.0, Z: 10.0}
                         Children: {}
                     3b7dfa1b125c179fd3a6f28da739ba63: !ModelComponent
                         Id: 2792d5b1-d224-43d3-b8ac-6e557e42045c
