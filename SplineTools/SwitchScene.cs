@@ -19,7 +19,7 @@ namespace SplineTools
         {
             int DrawX = 10;
             int DrawY= 60;
-            for (int i = 0; i < Scenes.Count; i++)
+            for (int i = 0; i < Scenes.Count-1; i++)
             {
                 DebugText.Print($"Press {i + 1} to load '{Scenes[i]}' ", new Int2(DrawX, DrawY));
 

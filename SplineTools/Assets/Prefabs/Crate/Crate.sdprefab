@@ -19,7 +19,8 @@ Hierarchy:
                     24ce3bf269b6da02b353d6ed00fef428: !ModelComponent
                         Id: 1bfc3c12-6096-424e-b1f0-aabc0836d989
                         Model: 647edf5d-6ee1-4133-b6b5-d1ae1cb7bf29:Prefabs/Crate/Cube
-                        Materials: {}
+                        Materials:
+                            f247bb1e1b5e5fd2b9a1ec9f31081fdb~0: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
                     cfa2b70bcd6939fa366b9138ded2b4cf: !RigidbodyComponent
                         Id: 2011aab3-5a3e-462d-8f86-c6456589f18f
                         CanSleep: false
@@ -30,7 +31,7 @@ Hierarchy:
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
                         IsKinematic: false
-                        Mass: 2.0
+                        Mass: 10.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
                         OverrideGravity: false

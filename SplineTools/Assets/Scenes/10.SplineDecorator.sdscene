@@ -55,8 +55,8 @@ Hierarchy:
                 Components:
                     841ecd05e53d3b5aa0e68cfb8ccadcae: !TransformComponent
                         Id: 8ec38544-7d7e-4157-8ead-81da560ef96b
-                        Position: {X: -2.7823563, Y: -7.979999, Z: 1.9273406}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Position: {X: -2.3962114, Y: 4.0854764, Z: 1.1095474}
+                        Rotation: {X: 0.0, Y: 0.65246516, Z: 0.0, W: 0.7578187}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             f81f7590486f34d226a8cf37bee2d260: ref!! 1451cd4b-ea91-441a-97be-143ceddccafb
@@ -85,8 +85,8 @@ Hierarchy:
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 1451cd4b-ea91-441a-97be-143ceddccafb
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
+                        Position*: {X: -1.3591303, Y: 9.675992, Z: -9.04603}
+                        Rotation*: {X: 0.01618404, Y: 0.9202715, Z: 0.39091587, W: 0.0048128203}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
@@ -113,8 +113,8 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: c7a8213a-8590-4f69-9f8f-e02eddf3fa3e:Scenes/8.SplineTraverserPhysics
+                            0aaaeff513a73148a4386ce91381dad7: 696f374e-bae1-4de7-8e06-22117b5608de:Scenes/10.SplineDecorator
                             bacb4414a0c615bcb9eac5a66392355e: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera

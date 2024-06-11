@@ -37,7 +37,7 @@ Hierarchy:
                 Components:
                     3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
                         Id: ce898b6e-2daf-4dbd-811f-e14ff21ef073
-                        Position: {X: 3.3215988, Y: 0.36120296, Z: 1.7011464}
+                        Position: {X: 3.3182135, Y: 0.36120296, Z: 0.7675243}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.1749723, Y: 0.1749723, Z: 0.1749723}
                         Children: {}
@@ -51,6 +51,12 @@ Hierarchy:
                         SplineEndReachedParticle: ref!! d48a452e-8823-4daf-a152-9f28173c9d22
                         SplineNodeReachedParticle: ref!! f6bf2050-b1d3-4c54-9c21-79bdcef5161a
                         ReverseOnEnd: false
+                    a2b718c420fccfec13c3289b7cb72b42: !SplineTraverserComponent
+                        Id: 2021a2ed-a93f-4d09-8614-bdcb27c9ac6e
+                        SplineComponent: ref!! 9e7b486e-6d17-483a-b371-303006c98282
+                        Speed: 1.0
+                        IsMoving: false
+                        IsRotating: false
         -   Entity:
                 Id: 0cc12f7d-46ee-4d2d-ad91-24208b809f28
                 Name: Directional light
@@ -89,7 +95,7 @@ Hierarchy:
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: 44da1e52-46ff-4478-b9fe-f3274f416426
                         SplineNode:
-                            Segments: 20
+                            Segments: 2
                             TangentOutLocal: {X: 1.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 1.0}
                             BoundingBox:
@@ -115,7 +121,7 @@ Hierarchy:
                 Components:
                     3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
                         Id: 3cbcac15-035e-4453-b37a-81d2e7b1b538
-                        Position: {X: -0.5662091, Y: 0.46677294, Z: 0.17423797}
+                        Position: {X: -0.88848364, Y: 0.46677294, Z: -0.36366352}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.1749723, Y: 0.1749723, Z: 0.1749723}
                         Children: {}
@@ -130,8 +136,8 @@ Hierarchy:
                         Speed: 1.0
                         IsMoving: true
                         IsRotating: false
-                    9b482d6cf44e87e63800c96000cea402: !SplineTools.SplineTraverserEventsDemo,SplineTools
-                        Id: 00118a04-6422-49e5-8e06-8d5a06a4fe6e
+                    e829a761a45bd157b30c5c59e0db5f11: !SplineTools.SplineTraverserEventsDemo,SplineTools
+                        Id: ca5ae71a-646e-47bd-8d4e-4a9afd07f627
                         SplineEndReachedParticle: ref!! d48a452e-8823-4daf-a152-9f28173c9d22
                         SplineNodeReachedParticle: ref!! f6bf2050-b1d3-4c54-9c21-79bdcef5161a
                         ReverseOnEnd: true
@@ -170,8 +176,8 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: c7a8213a-8590-4f69-9f8f-e02eddf3fa3e:Scenes/8.SplineTraverserPhysics
+                            0aaaeff513a73148a4386ce91381dad7: 696f374e-bae1-4de7-8e06-22117b5608de:Scenes/10.SplineDecorator
                             bacb4414a0c615bcb9eac5a66392355e: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
@@ -257,7 +263,7 @@ Hierarchy:
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: da59a3a4-c183-48e5-b455-90ba71d2b9df
                         SplineNode:
-                            Segments: 20
+                            Segments: 2
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -1.0}
                             TangentInLocal: {X: 1.0, Y: 0.0, Z: 0.0}
                             BoundingBox:
@@ -437,7 +443,7 @@ Hierarchy:
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: 49e4a9ab-834b-4caf-bf38-67ff46fde308
                         SplineNode:
-                            Segments: 20
+                            Segments: 2
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: 1.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: -1.0}
                             BoundingBox:

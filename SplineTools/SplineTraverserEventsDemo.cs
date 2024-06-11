@@ -29,7 +29,7 @@ namespace SplineTools
 
             if (ReverseOnEnd)
             {
-                traverserComponent.SplineTraverser.Speed *= - 1;
+                traverserComponent.SplineTraverser.Speed *= -1;
                 traverserComponent.SplineTraverser.IsMoving = true;
             }
         }

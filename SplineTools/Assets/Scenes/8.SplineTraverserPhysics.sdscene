@@ -10,10 +10,13 @@ Hierarchy:
         - ref!! c37a52a5-f7a1-4d6b-97fa-5efdb6d96338
         - ref!! dc6fb3d7-6c06-4f98-b8b0-faadc578c924
         - ref!! ed6b590a-9913-444e-bb2f-d1ff51d5dd31
-        - ref!! 5f2639ba-a0b8-4f70-b262-e52eef255db8
-        - ref!! 0d4873d9-e038-4b37-983d-83f5b85cad96
         - ref!! a074eb29-38ee-407e-93d9-bb6ab0fa4fa7
         - ref!! c654d2dd-8580-49f6-b294-69c8f3721a1f
+        - ref!! b9ff6bd5-d75e-46c7-b91e-b17deb507dbb
+        - ref!! 5e596181-e432-413d-a125-778cf1292864
+        - ref!! abc18925-016c-4289-8bce-50e58ea6f1a2
+        - ref!! 5f2639ba-a0b8-4f70-b262-e52eef255db8
+        - ref!! 0d4873d9-e038-4b37-983d-83f5b85cad96
         - ref!! 5d65aebf-6245-4c97-8e67-9586e220451e
         - ref!! 98b59819-5c07-431e-b5ef-ede7b871c3e5
     Parts:
@@ -23,42 +26,44 @@ Hierarchy:
                 Components:
                     77488cc2fe54023378c36d95e0fb0379: !TransformComponent
                         Id: 24b43978-ffc7-4636-93e5-ec4098ec2fac
-                        Position*: {X: 0.0, Y: 1.2617902, Z: -4.4578094}
+                        Position*: {X: 0.23443794, Y: 0.8903974, Z: -4.8699803}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 0.25, Z: 2.0}
+                        Scale*: {X: 2.0, Y: 1.0, Z: 2.0}
                         Children: {}
                     24ce3bf269b6da02b353d6ed00fef428: !ModelComponent
                         Id: 14f233cd-0138-4644-9875-afb0d09df02b
                         Model: 4f797ac8-2eb4-48e2-939c-7c6da5764c3e:Prefabs/MovingPlatform/Cube
-                        Materials: {}
-                    cfa2b70bcd6939fa366b9138ded2b4cf: !RigidbodyComponent
-                        Id: 93323900-3650-4bfc-9685-4dc265e1e1d9
+                        Materials:
+                            d6eb2a6372ba8c94add70e4d3de5e87f*~0: 47fe2582-86c3-42c8-ab65-978342467add:Materials/Red
+                    156828b262025aeaf42330e24fbf4fa0*: !SplineTraverserComponent
+                        Id: 4f455db7-0a93-4fdb-9b6d-29cd95b4c989
+                        SplineComponent: ref!! b5c0cad5-4673-4e81-bb1a-316ef9288d25
+                        Speed: 0.5
+                        IsMoving: true
+                        IsRotating: true
+                    df5850558087c2549a80d69a031dccce*: !RigidbodyComponent
+                        Id: d8a9136a-8726-4f7c-b736-f10497424147
                         CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
+                        Restitution: 20.0
+                        Friction: 20.0
+                        RollingFriction: 1.0
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
                         IsKinematic: true
-                        Mass: 1.0
+                        Mass: 10.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
                         OverrideGravity: false
                         Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
                         NodeName: null
                         ColliderShapes:
-                            4f19fe7e5414e39f0f72846795c79400: !BoxColliderShapeDesc
+                            152c7000a65ad4d10d7658245f42142a: !BoxColliderShapeDesc
                                 Is2D: false
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    156828b262025aeaf42330e24fbf4fa0*: !SplineTraverserComponent
-                        Id: 4f455db7-0a93-4fdb-9b6d-29cd95b4c989
-                        SplineComponent: ref!! b5c0cad5-4673-4e81-bb1a-316ef9288d25
-                        Speed: 1.0
-                        IsMoving: true
-                        IsRotating: false
+                    cfa2b70bcd6939fa366b9138ded2b4cf: ~(Deleted)
             Base:
                 BasePartAsset: 86efff62-f8b8-47cc-8262-04ab60d4b18d:Prefabs/MovingPlatform/Moving Platform
                 BasePartId: 99f3479b-e72c-45a1-ba41-17e79ebc5d5f
@@ -103,7 +108,7 @@ Hierarchy:
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: 39a80954-03fb-4da8-8c33-1bc6fa0b3c97
                         SplineNode:
-                            Segments: 40
+                            Segments: 10
                             TangentOutLocal: {X: -6.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: 2.0, Y: 0.0, Z: 0.0}
                             BoundingBox:
@@ -120,6 +125,21 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             f84f94304c51bd8508234cc25388e984: ref!! 7a6d5948-61d6-4479-b6c4-bdafdda9c517
+        -   Entity:
+                Id: 5e596181-e432-413d-a125-778cf1292864
+                Name: Large platform
+                Components:
+                    82530ae7581dcf64cb7c263a4e5ec728: !TransformComponent
+                        Id: ef271fe3-0d6d-471c-bcfa-0cfc53797ee2
+                        Position: {X: 7.23804, Y: 1.389718, Z: -0.038699627}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 3.0, Z: 1.0}
+                        Children: {}
+                    dda959dcf3fd2998de0cddbea3f1b084: !ModelComponent
+                        Id: 0b2fbcd8-7245-4e78-ab1b-f3d009090fef
+                        Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
+                        Materials:
+                            55d423913e79087b029b325c6a3a3f38~0: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
         -   Entity:
                 Id: 5f2639ba-a0b8-4f70-b262-e52eef255db8
                 Name: Spline1
@@ -164,29 +184,61 @@ Hierarchy:
                 Components:
                     82530ae7581dcf64cb7c263a4e5ec728: !TransformComponent
                         Id: b81d18a8-7b30-499f-a631-92be4828ae4f
-                        Position: {X: -0.24795389, Y: 0.39574355, Z: -8.268002}
+                        Position: {X: 0.4535936, Y: -0.96360093, Z: -8.421749}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 1.0, Z: 3.0}
+                        Scale: {X: 10.0, Y: 4.0, Z: 3.0}
                         Children: {}
                     dda959dcf3fd2998de0cddbea3f1b084: !ModelComponent
                         Id: f2edac47-a69b-47e2-abe2-0c0319df3a95
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            55d423913e79087b029b325c6a3a3f38~0: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
+                            55d423913e79087b029b325c6a3a3f38~0: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
+                    19c2014f11039cfc60a3c5d3003229f4: !StaticColliderComponent
+                        Id: 10c46260-dfd3-458e-aad5-d430693aba16
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            994dc396160427289595878c589db0c2: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: abc18925-016c-4289-8bce-50e58ea6f1a2
+                Name: Large platform
+                Components:
+                    82530ae7581dcf64cb7c263a4e5ec728: !TransformComponent
+                        Id: 86d270bd-4f32-457e-bd6c-b5618cb53a19
+                        Position: {X: -8.544702, Y: 1.389718, Z: -0.038699627}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 3.0, Z: 1.0}
+                        Children: {}
+                    dda959dcf3fd2998de0cddbea3f1b084: !ModelComponent
+                        Id: 891c3525-4e3c-4cd7-a3a4-1568654b1667
+                        Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
+                        Materials:
+                            55d423913e79087b029b325c6a3a3f38~0: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
         -   Entity:
                 Id: b5aade9c-6aaa-463d-ab2f-8ee85e62f0ec
                 Name: Camera
                 Components:
                     f29994c5681a8c2d045f5c0f5bd4ded9: !TransformComponent
                         Id: 46b5488a-7cc1-4d36-b615-a806c7daa301
-                        Position*: {X: 0.0, Y: 0.10098133, Z: 0.0}
-                        Rotation: {X: 5.710166E-08, Y: 0.95851386, Z: 0.28504583, W: -1.6981067E-08}
+                        Position*: {X: -8.032744, Y: 1.424162, Z: 4.4137897}
+                        Rotation*: {X: 0.1811196, Y: 0.74014425, Z: 0.22010638, W: -0.60904455}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     05167499ad9121ce9e96b1b4c5444b0a: !CameraComponent
                         Id: 7eff8bf0-c1d9-4cd0-9491-2c7ba8219e58
                         Name: null
                         Projection: Perspective
+                        VerticalFieldOfView*: 60.0
                         Slot: 74df2f5f-7b3c-4819-8415-58dfc3199aea
                     045639e1576b95de5f5621cbf2a35e3b: !SplineTools.BasicCameraController,SplineTools
                         Id: 26d385a1-52d8-4892-8eee-f84eae9db8a4
@@ -207,13 +259,28 @@ Hierarchy:
                             7212c1f5ee4007dd2296f38d6b0c3041: 7b5a7073-7dba-4190-8e98-b5554860c195:Scenes/5.SplineTraverserByCode
                             10a479b129b84092afded07ba36cee7f: 4688a67a-2aec-4fc3-816c-c5a52355f096:Scenes/6.SplineTraverserEvents
                             7996233e7f777991504aeab3ccd669f0: 6e8bdc37-82de-4aab-aca0-8ae82d197ce4:Scenes/7.SplineTraverserCamera
-                            0494f0f2d97890d4ebbb7b60a113d1f1: 881a00ce-94a4-4ee3-ab22-6b64a2321e60:Scenes/20.SplineStressTesting
-                            0aaaeff513a73148a4386ce91381dad7: 2b452418-3f9d-4c71-8fac-f3090c5e53cd:Scenes/21.SplineTraverserStressTest
+                            0494f0f2d97890d4ebbb7b60a113d1f1: c7a8213a-8590-4f69-9f8f-e02eddf3fa3e:Scenes/8.SplineTraverserPhysics
+                            0aaaeff513a73148a4386ce91381dad7: 696f374e-bae1-4de7-8e06-22117b5608de:Scenes/10.SplineDecorator
                             bacb4414a0c615bcb9eac5a66392355e: 918da35a-d179-4288-a9aa-e7c801e9759f:Scenes/11.MeshSpline
             Base:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
                 InstanceId: d1cb6baa-ffdc-4768-a69c-75e8330b31ed
+        -   Entity:
+                Id: b9ff6bd5-d75e-46c7-b91e-b17deb507dbb
+                Name: Large platform
+                Components:
+                    82530ae7581dcf64cb7c263a4e5ec728: !TransformComponent
+                        Id: 95d352d8-ef9f-4846-b949-55143019eda5
+                        Position: {X: -0.18701, Y: 1.389718, Z: -0.038699627}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 3.0, Z: 1.0}
+                        Children: {}
+                    dda959dcf3fd2998de0cddbea3f1b084: !ModelComponent
+                        Id: 2cf51cf5-5fc5-453f-a2d5-eb61273b1074
+                        Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
+                        Materials:
+                            55d423913e79087b029b325c6a3a3f38~0: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
         -   Entity:
                 Id: c37a52a5-f7a1-4d6b-97fa-5efdb6d96338
                 Name: Ambient light
@@ -236,15 +303,15 @@ Hierarchy:
                 Components:
                     82530ae7581dcf64cb7c263a4e5ec728: !TransformComponent
                         Id: 5b3818fd-565c-436a-aaa7-c97141a743bb
-                        Position: {X: -0.24795389, Y: 0.39574355, Z: 6.8977404}
+                        Position: {X: -0.24795389, Y: -0.96360093, Z: 6.8977404}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 10.0, Y: 1.0, Z: 3.0}
+                        Scale: {X: 10.0, Y: 4.0, Z: 3.0}
                         Children: {}
                     dda959dcf3fd2998de0cddbea3f1b084: !ModelComponent
                         Id: 9730814e-5f67-4d00-8ee9-ed9692a38ba6
                         Model: a8466e7d-09b3-42f3-b1af-a8bc16cf547d:Cube
                         Materials:
-                            55d423913e79087b029b325c6a3a3f38~0: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
+                            55d423913e79087b029b325c6a3a3f38~0: cd6fe2c7-b2ef-4c0e-a5e7-45abaf69c9c8:Materials/Blue
         -   Entity:
                 Id: c6a4c7a7-9237-4ad7-bf6e-dfeb336a5a2e
                 Name: Node3
@@ -258,7 +325,7 @@ Hierarchy:
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: b44182a9-aa8e-4879-8340-ef44e8df2889
                         SplineNode:
-                            Segments: 40
+                            Segments: 10
                             TangentOutLocal: {X: 0.0, Y: 0.0, Z: -2.0}
                             TangentInLocal: {X: 0.0, Y: 0.0, Z: 2.0}
                             BoundingBox:
@@ -270,25 +337,28 @@ Hierarchy:
                 Components:
                     77488cc2fe54023378c36d95e0fb0379: !TransformComponent
                         Id: 7a6d5948-61d6-4479-b6c4-bdafdda9c517
-                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: 0.57583076, Y: 1.0705273, Z: -0.020464191}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.396606, Y: 0.396606, Z: 0.396606}
                         Children: {}
                     24ce3bf269b6da02b353d6ed00fef428: !ModelComponent
                         Id: 27dc6aad-16e6-4e75-b8db-1806f6ced5e6
                         Model: 647edf5d-6ee1-4133-b6b5-d1ae1cb7bf29:Prefabs/Crate/Cube
-                        Materials: {}
+                        Materials:
+                            23f84b454dc2dfd9ee78634648a237e1*~0: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
+                            f247bb1e1b5e5fd2b9a1ec9f31081fdb~: ~(Deleted)
                     cfa2b70bcd6939fa366b9138ded2b4cf: !RigidbodyComponent
                         Id: e5e571d8-d403-4ba5-8ade-ebb0cd9cc3f2
+                        CollisionGroup*: KinematicFilter
                         CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
+                        Restitution*: 0.0
+                        Friction*: 1.0
                         RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
+                        CcdMotionThreshold*: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
                         IsKinematic: false
-                        Mass: 2.0
+                        Mass: 10.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
                         OverrideGravity: false
@@ -311,14 +381,14 @@ Hierarchy:
                 Components:
                     12849867b907b4f072ad6b0a722e7113: !TransformComponent
                         Id: 9d8be292-16e6-4b84-b657-c16ff55a9f84
-                        Position: {X: -0.80766034, Y: -0.8201976, Z: 4.73457}
+                        Position: {X: -3.959906, Y: -1.3424315, Z: 3.9012907}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     4cfe05c90ae3791cacbe14b76d3cdf38: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
                         Id: 13770405-5725-4299-b992-cafffc6cf3e8
                         SplineNode:
-                            Segments: 40
+                            Segments: 10
                             TangentOutLocal: {X: 2.0, Y: 0.0, Z: 0.0}
                             TangentInLocal: {X: -2.0, Y: 0.0, Z: 0.0}
                             BoundingBox:
@@ -372,25 +442,27 @@ Hierarchy:
                 Components:
                     77488cc2fe54023378c36d95e0fb0379: !TransformComponent
                         Id: e027c545-6146-4ca1-88f8-33440f44b209
-                        Position: {X: 0.0, Y: 0.2365655, Z: 0.0}
+                        Position*: {X: -0.08453901, Y: 0.45995405, Z: -0.40903628}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 0.396606, Y: 0.396606, Z: 0.396606}
                         Children: {}
                     24ce3bf269b6da02b353d6ed00fef428: !ModelComponent
                         Id: 9907aac5-c7ef-464e-b63a-ca4d3e11f5ff
                         Model: 647edf5d-6ee1-4133-b6b5-d1ae1cb7bf29:Prefabs/Crate/Cube
-                        Materials: {}
+                        Materials:
+                            b867cfb843f35fa2adadf9598c29c82c*~0: df5d783c-17ea-4ba6-a8b1-cceb63ad2a00:Materials/Yellow
+                            f247bb1e1b5e5fd2b9a1ec9f31081fdb~: ~(Deleted)
                     cfa2b70bcd6939fa366b9138ded2b4cf: !RigidbodyComponent
                         Id: 4201ab5e-eec0-4fe1-874a-7ce9c1d9b3f6
                         CanSleep: false
                         Restitution: 0.0
-                        Friction: 0.5
+                        Friction*: 1.0
                         RollingFriction: 0.0
                         CcdMotionThreshold: 0.0
                         CcdSweptSphereRadius: 0.0
                         IsTrigger: false
-                        IsKinematic: false
-                        Mass: 2.0
+                        IsKinematic*: false
+                        Mass: 10.0
                         LinearDamping: 0.0
                         AngularDamping: 0.0
                         OverrideGravity: false
