@@ -10,6 +10,7 @@ Hierarchy:
         - ref!! db83d61d-9c89-4ba2-84bd-a7d000dc69ee
         - ref!! bd9ef514-7870-4e50-b839-031da3f74ce4
         - ref!! 458ab9f1-b892-4dfc-94e3-20a2eb5fb87c
+        - ref!! 47323954-a9ac-4c83-a175-987dd2180486
     Parts:
         -   Entity:
                 Id: 458ab9f1-b892-4dfc-94e3-20a2eb5fb87c
@@ -41,14 +42,36 @@ Hierarchy:
                             NodesMaterial: null
                             ShowBoundingBox: false
                             BoundingBoxMaterial: null
-                    bcbe28c342ab70714b157c4e8e6b3639: !SplineDecoratorComponent
-                        Id: 6a44e412-ffd3-43b0-b8a5-8b02884b597c
-                        DecoratorSettings: !SplineAmountDecorator
-                            Decorations:
-                                16467cd1f0561e7ed1e0278abcf1cd93: 459c96ff-90c0-4265-8310-1e568a1c4832:Prefabs/Streetlight/StreetLight
-                            SpawnOrder: Random
-                            Amount: 4
-                        SplineComponent: ref!! ee32cbfa-3b54-41ab-8f76-19b2b57979df
+        -   Entity:
+                Id: 47323954-a9ac-4c83-a175-987dd2180486
+                Name: SplineDecorator-Amount
+                Components:
+                    3048e49ff5a16ef987b325d524fcfaf9: !TransformComponent
+                        Id: 3d26b8a9-27f9-487e-b83b-97c9f6c23262
+                        Position: {X: 9.498013, Y: 0.0, Z: 3.3552155}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            ac320f6ed796dc63c4e9b061bacd130c: ref!! a7ea5613-1f19-496d-a2e7-20960d740262
+                            9e44f9b68bd94c6476896ba3a0be31e6: ref!! 670641d5-cb0d-438c-9570-6349caab4a5f
+                    09be169be47c889dd7bfc170407ed6f9: !ModelComponent
+                        Id: 6a275907-5636-4b79-860b-5eac916aa95e
+                        Model: fbd48d95-45c7-4c3a-b544-e236a6244a51:Sphere
+                        Materials:
+                            b6ef819d97a7accaeaec0204511c0478~0: c5a1e74d-7d1d-4bcd-ae06-419617d21618:Materials/Green
+                    3e4aa8b4373d1aeb55417ebfee9e1272: !SplineComponent
+                        Id: 53dc7f4c-36a6-4618-9cf7-d4915f992fd8
+                        Loop: false
+                        Nodes:
+                            54cbfa1340e6f38ad6da503637b91992: ref!! 37bb2ced-e26d-4024-970a-23e3a02233e4
+                            5b55ddc46022e91afb500a2912d30a1c: ref!! 5f7de668-faa2-46a6-a660-16f41e9ef13c
+                        RenderSettings:
+                            ShowSegments: true
+                            SegmentsMaterial: 2d416634-146f-4b5e-969c-ab6add1c80e6:Materials/LightBlue
+                            ShowNodes: false
+                            NodesMaterial: null
+                            ShowBoundingBox: false
+                            BoundingBoxMaterial: null
         -   Entity:
                 Id: 745e9268-c019-4f20-a1fd-72aee1da238a
                 Name: Camera
@@ -128,6 +151,26 @@ Hierarchy:
                 BasePartAsset: cb026551-9c62-4058-9896-d2d3f36539fa:Camera
                 BasePartId: 08472225-3859-4500-adbc-a22796f88494
                 InstanceId: fe41c970-c40d-4fc7-9b2e-ef4b2d030069
+        -   Folder: null
+            Entity:
+                Id: ac8c3ae7-42fc-4298-85a6-804b78db0231
+                Name: B
+                Components:
+                    3b762631430f107c0b569575ce60c509: !TransformComponent
+                        Id: 670641d5-cb0d-438c-9570-6349caab4a5f
+                        Position: {X: -6.3994207, Y: 0.0, Z: 6.3233743}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f12821e26016f7b452be62d4d93e6792: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 5f7de668-faa2-46a6-a660-16f41e9ef13c
+                        SplineNode:
+                            Segments: 1
+                            TangentOutLocal: {X: 0.0, Y: 0.0, Z: 10.0}
+                            TangentInLocal: {X: 10.0, Y: 0.0, Z: 0.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: b84af045-655b-4f14-bbec-7910cc6d6be5
                 Name: B
@@ -169,6 +212,26 @@ Hierarchy:
                         SortingMode: ByTime
                         FilteringMode: Fps
                         ResultPage: 1
+        -   Folder: null
+            Entity:
+                Id: cb1fe0e0-b79b-4025-800f-4b43581bf84a
+                Name: A
+                Components:
+                    1fe77c234f191da79029876ed18ccc6a: !TransformComponent
+                        Id: a7ea5613-1f19-496d-a2e7-20960d740262
+                        Position: {X: -3.662555, Y: 0.0, Z: -8.014677}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ed3d1d2342d68eb6d270fd98469e92b0: !Stride.Engine.Splines.Components.SplineNodeComponent,Stride.Engine
+                        Id: 37bb2ced-e26d-4024-970a-23e3a02233e4
+                        SplineNode:
+                            Segments: 40
+                            TangentOutLocal: {X: -10.0, Y: 0.0, Z: 0.0}
+                            TangentInLocal: {X: 0.0, Y: 0.0, Z: -10.0}
+                            BoundingBox:
+                                Minimum: {X: 0.0, Y: 0.0, Z: 0.0}
+                                Maximum: {X: 0.0, Y: 0.0, Z: 0.0}
         -   Entity:
                 Id: db83d61d-9c89-4ba2-84bd-a7d000dc69ee
                 Name: Directional light
@@ -184,7 +247,7 @@ Hierarchy:
                         Type: !LightDirectional
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                            Shadow: !LightDirectionalShadowMap
+                            Shadow:
                                 Enabled: true
                                 Filter: !LightShadowMapFilterTypePcf
                                     FilterSize: Filter5x5
